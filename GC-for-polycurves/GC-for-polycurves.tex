@@ -1,0 +1,84 @@
+\documentclass[dvipdfmx]{article}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{mathtools}
+
+
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{
+ setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=blue,
+ citecolor=red,
+}
+
+\theoremstyle{definition}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\usepackage[utf8]{inputenc}
+
+\input{macro.tex}
+\renewcommand{\emph}{\textbf}
+
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=(\roman*)}
+
+
+\title{Master Thesis, On the Absolute Anabelian Geometry of Hyperbolic Polycurves over Local Fields (Title, 仮)}
+\author{Kazuki Masugi}
+\date{\today}
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section*{Introduction}
+\input{Intro.tex}
+
+\newpage
+\section*{Notations and Conventions}
+\input{NotationsCoventions.tex}
+
+\newpage
+\section{Preliminaries on Logarithmic Geometry of Hyperbolic Polycurves}
+\input{PrelimPolycurves.tex}
+
+\newpage
+\section{Cofinality of $l$-admissible finite \'{e}tale coverings}
+\input{Cofinality.tex}
+
+\newpage
+\section{Dehn-twist Pointed Stable Curves type Outer Representations}
+\input{DTPSC.tex}
+
+\newpage
+\section{Reconstruction of Log-full Subgroups}
+\input{LogFullSubgroups.tex}
+
+\newpage
+\section{Reconstruction of Dimensions via Corank 1 Intersections}
+\input{CorankOneIntersections.tex}
+
+\newpage
+\section{Reconstruction of the Graph-theoretic Structure of Proper Hyperbolic Polycurves of Dimension 2}
+\input{GraphStructure.tex}
+
+\newpage
+\section*{References}
+\input{Reference.tex}
+
+\end{document}

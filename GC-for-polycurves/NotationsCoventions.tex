@@ -1,0 +1,80 @@
+\paragraph*{Numbers:}
+
+The notation $\Primes$ will be used to denote the set of prime numbers. The
+notation $\Nat$ will be used to denote the set of nonnegative integers. 
+The notation $\Int$ will be used to denote the additive group or ring of integers. The
+notation $\Rat$ will be used to denote the field of rational numbers. The notation
+$\Rat_{\ge0}$ will be used to denote the additive monoid of nonnegative rational numbers. The notation $\Real$ will be used to denote the field of real numbers. For each $x \in \Real$, the notation $\lfloor x \rfloor$ will be used to denote the greatest integer ≤ x. If $p$ is a prime number, then the notation $\Qp$ will be used to denote the field of p-adic numbers; the notation $\Zp$ will be used to denote the additive group or ring of p-adic integers; the notation $\Qbarp$ will be used to denote an algebraic closure of $\Qp$; the notation $\Cp$ will be used to denote the p-adic completion of $\Qp$. We shall refer to a finite extension field of $\Qp$ as a \emph{p-adic local field}.
+
+\paragraph*{Monoids:}
+
+Let $M$ be a commutative monoid. In this subsection, we regard the set
+of positive integers $\Nat_{\ge1}$ as a directed set via its \emph{multiplicative} structure, i.e., $i \leq j \Leftrightarrow i | j$. For $i \in \Nat_{\ge1}$, write $M_i \coloneqq M$. For $i, j \in \Nat_{\ge1}$ such that
+$i \leq j$, write $\phi_{i,j} : M_i \to M_j$ for the homomorphism of monoids obtained by multiplication by $\frac{j}{i}$. Then we shall refer to the inductive limit of the inductive system $\{M_i, \phi_{i,j}\}$ on the directed set $\Nat_{\ge1}$ as the \emph{perfection} of $M$.
+
+\paragraph*{Rings and fields:}
+
+Let $R$ be a ring. Then we shall write $R^\times$ for the multiplicative group of units of the ring.
+
+Let $F$ be a perfect field, $p$ a prime number. Then the notation $\overline{F}$ will be used to denote an algebraic closure of $F$; $G_F \coloneqq \text{Gal}(\overline{F} / F)$.
+
+Suppose that $F$ is a \emph{valuation field}, i.e., a field equipped with a valuation map. Then we shall write $\mathcal{O}_F$ for the ring of integers of $F$; $\mathfrak{m}_F$ for the maximal ideal of $\mathcal{O}_F$. 
+
+\paragraph*{Topological groups:}
+
+Let $G$ be a topological group; $H \subseteq G$ a closed subgroup of $G$. Then we shall write $G^\ab$ for the abelianization of $G$; $Z_G(H)$ for the \emph{centralizer} of $H$ in $G$, i.e., $Z_G(H) \coloneqq \{g \in G \mid ghg^{-1} = h \text{ for all } h \in H\}$; $N_G(H)$ for the \emph{normalizer} of $H$ in $G$, i.e., $N_G(H) \coloneqq \{g \in G \mid gHg^{-1} = H\}$; and $C_G(H)$ for the \emph{commensurator} of $H \subseteq G$, i.e.,
+\[
+C_G(H) \coloneqq \{g \in G \mid H \cap gHg^{-1} \text{ is of finite index in } H \text{ and } gHg^{-1}\}.
+\]
+We shall say that the closed subgroup $H$ is \emph{commensurably terminal} in $G$ if $H = C_G(H)$. Let $\Sigma \subseteq \Primes$ be a nonempty subset. Then we shall write $G^\Sigma$ for the pro-$\Sigma$ completion of $G$.
+
+% Z_G と C_G のあいだの and 必要 ?
+
+We shall write $\Aut(G)$ for the group of continuous automorphisms of the
+topological group $G$, $\Inn(G) \subseteq \Aut(G)$ for the subgroup of inner automorphisms of $G$, and $\Out(G) \coloneqq \Aut(G)/\Inn(G)$. Suppose that $G$ is \emph{center-free}. Then we have a \emph{natural exact sequence} of groups
+\[1 \to \Inn(G) \to \Aut(G) \to \Out(G) \to 1\]
+where $G$ is identified with $\Inn(G)$ via the natural isomorphism $G \cong \Inn(G)$ sending $g \in G$ to the inner automorphism $x \mapsto gxg^{-1}$ of $G$.
+
+If $J$ is a group, and $\rho : J \to \Out(G)$ is a homomorphism, then we shall denote by $G \outrtimes J$ the group obtained by pulling back the above exact sequence of groups via $\rho$. Thus, we have a natural exact sequence of groups
+\[1 \to G \to G \outrtimes J \to J \to 1.\]
+Suppose further that the topology of $G$ admits a \emph{countable basis} consisting of \emph{characteristic open subgroups} of $G$. Then one verifies immediately that the topology of $G$ induces a \emph{natural topology} on the group $\Aut(G)$, hence on the group $\Out(G)$. In particular, one verifies easily that if $J$ is a \emph{topological group}, and $\rho : J \to \Out(G)$ is \emph{continuous}, then $G \outrtimes J$ admits a natural \emph{topological group} structure.
+
+Let $G_1$, $G_2$ be topological groups. Then we shall write $\Isom(G_1, G_2)$ for the set of \emph{isomorphisms} from $G_1$ to $G_2$; \[\OutIsom(G_1, G_2)\] for the set of \emph{outer isomorphisms} from $G_1$ to $G_2$, i.e., the set of $\Inn(G_2)$-orbits of $\Isom(G_1, G_2)$ under the natural action of $\Inn(G_2)$ on $\Isom(G_1, G_2)$ by post-composition.
+
+\paragraph*{Schemes:}
+
+Let $K$ be a field; $K \subseteq L$ a field extension; $X$ an algebraic variety [i.e., a separated, geometrically integral scheme of finite type] over $K$. Then we shall write $X_L \coloneqq X \times_K L$. Suppose that $K$ is a valuation field. Let $X$ be an $\mathcal{O}_K$-scheme. Then we shall write $X_s$ for the special fiber of $X$ [i.e., the fiber of $X$ over the closed point of $\Spec \, \mathcal{O}_K$].
+
+Let $S_1$, $S_2$ be schemes. Then we shall write $\Isom(S_1, S_2)$ for the set of isomorphisms of schemes between $S_1$ and $S_2$.
+
+\paragraph*{Log schemes:}
+
+If $X^\log$ is a fine log scheme, then we shall write
+
+\begin{itemize}
+\item $X$ for the underlying scheme of $X^\log$;
+\item $\mathcal{M}_{X^\log}$ for the \'{e}tale sheaf of monoids on $X$ that defines the log structure of
+$X^\log$;
+\item $\mathcal{C}_{X^\log} \coloneqq \mathcal{M}_{X^\log} / \mathcal{O}_X^\times$, which we shall refer to as the characteristic of $X^\log$ [cf. [MT], Definition 5.1, (i)].
+\end{itemize}
+
+Let $K$ be a complete discrete valuation field; $Y$ a hyperbolic curve over $K$; $Y$ a compactified semistable model of $Y$ over $\mathcal{O}_K$. Write $S \coloneqq \Spec \, \mathcal{O}_K$; $S^\log$ for the log scheme determined by the log structure associated $\Spec \mathcal{O}_K$; $S^\log$ for the log scheme determined by the log structure associated to the closed point of $S$. Then it follows immediately from [Hur], §3.7, §3.8, that the multiplicative monoid of sections of $O_Y$ that are invertible on [the open subscheme of $Y$ determined by] $Y$ determines a natural log structure on $Y$. Denote the resulting log scheme by $Y^\log$. Then one verifies immediately that the natural morphism of schemes $Y \to S$ extends to a a proper, log smooth morphism $Y^\log \to S^\log$ of fine log schemes. Let $y$ be a geometric point of $Y_s$. Write $\mathcal{C}_{Y^\log, y}^\pf$ for the perfection of the stalk of the characteristic $\mathcal{C}_{Y^\log}$ at $y$. Then one verifies immediately that, if the image of $y$ in $Y_s$ is a smooth point that is not a cusp (respectively, a cusp; a node), then
+$\mathcal{M}_{Y^\log, y}^\pf \overset{\sim}{\to} \mathbb{Q}_{\ge 0}$ (respectively, $\mathcal{M}_{Y^\log, y}^\pf \overset{\sim}{\to} \mathbb{Q}_{\ge 0} \times \mathbb{Q}_{\ge 0}$; $\mathcal{M}_{Y^\log, y}^\pf \overset{\sim}{\to} \mathbb{Q}_{\ge 0} \times \mathbb{Q}_{\ge 0}$).
+
+% あとでちゃんと書く、polycurve の場合も含めてちゃんとやらないといけない。AbsTopII ? あと、char について
+
+
+\paragraph*{Fundamental groups:}
+For a connected noetherian scheme $S$, we shall write $\FG{S}$ for the \'{e}tale fundamental group of $S$, relative to a suitable choice of basepoint. Let $\Sigma \subseteq \Primes$ be a nonempty subset; $K$ a perfect field; $X$ an algebraic variety over $K$. Then we shall write
+\[
+\GFG{X} \coloneqq \FG{X_{\algc{K}}}; \quad \GPRFG{\Sigma}{X} \coloneqq \FG{X}/\Ker(\GFG{X} \twoheadrightarrow \GFG{X}^\Sigma),
+\]
+where $\GFG{X} \to \GFG{X}^\Sigma$ denotes the natural surjection. We shall refer to $\GFG{X}^\Sigma$ (respectively, $\GPRFG{\Sigma}{X}$) as the geometric pro-$\Sigma$ fundamental group (respectively, geometrically pro-$\Sigma$ fundamental group) of $X$.
+
+% Notations, Conventions はあとでちゃんと確認する。
+
+ちゃんと確認して補正する必要がある。
+
+moduli の記述, Mgr, Mbargr の記述もする
+
+pi1, log scheme, abs Gal group, 分岐理論
