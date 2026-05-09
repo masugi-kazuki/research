@@ -1,0 +1,107 @@
+\documentclass[dvipdfmx]{article}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\usepackage{mathtools}
+
+
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{
+ setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=blue,
+ citecolor=red,
+}
+
+\theoremstyle{definition}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\usepackage[utf8]{inputenc}
+
+
+\renewcommand{\emph}{\textbf}
+
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=(\roman*)}
+
+
+\title{20260509}
+\author{Kazuki Masugi}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section{reduction の幾何と体論}
+
+体 $K$ と $L$ が有限生成拡大の関係にあるとき、これらはひとつの (有限型) スキームのなかの点として登場する。これらのあいだには specialization / generization の関係がある - すれば、たとえばこれらのあいだのアーベル多様体の数論などのあいだには、SGA7 的な意味で関係が生まれる。
+
+こういう事実を通じて、$K$ 上の数論と $L$ 上の数論に関連づけたり、あるいはこれらが近しいものだと結論づけることはできるだろうか？
+
+あまり意味のない問いかもしれないが、$K$ が $K$ 上非自明なかたちで reduction の関係にあったら、どんなことが起こるのだろうか？こういうことは $\mathbb{Q}$ 上有限生成体などでは、超越次元などのメジャーの存在によって、否定される。 
+
+\section{discretization}
+
+reduction の幾何にしばしばあらわれる「離散化」の仕組みを、もっと徹底的に重視できないだろうか？このことは SGA7, もっといえば N\'eron model の在り方のなかに込められている。これは極限をとれば、profinite vs. tempered の対決ということになる。
+
+\section{素点の無限性}
+
+大域的な幾何において、しばしば素点は無限個あらわれ、そのなかの分岐素点は有限個である。このことから、たとえば次のような結論を導けたりする - 数体 $K$ 上のアーベル多様体 $A$ について、$\Pi_A^{\text{ab-t}} = G_K^{\text{ab-t}}$. こういった議論は、次のモデル理論的、集合論的な事実に端を発している。
+
+\begin{itemize}
+	\item 型 $T$ のモデル $M$ は、有限型の $T$ のモデルの極限としてあらわされる。
+\end{itemize}
+
+すなわち、$T$ の presentability によって、数論的事実が導かれるということである。このことは、重くみるべきなのではないか？
+
+\section{アルゴリズム・復元という仕組みが与える定量的帰結}
+
+遠アーベル幾何学において、しばしば $\mathrm{Isom}$ に関する計算が、復元アルゴリズムの帰結としてみちびかれることがある。「このようなことが可能である仕組み」を、もっと気にしていく必要がある気がする。これは、ある意味で EssLogStr の系譜的な視点といいたい。
+
+\section{Raynaud の結果、$p$-進幾何学}
+
+基本群の $p$ 的な振る舞い、もっといえば $p$ 的な振る舞いと $l$ 的な振る舞いのあいだの関係をみるにあたって、Raynaud の結果は最も基本的かつ重要であるといえるのではないか。(ある種の大域幾何？)
+
+正標数の体上の曲線の pro-$\Sigma$ 基本群の elasticity みたいなものを調べるにも、$p$-rank の $p$ 以外の方法による制御が求められるように思われる - ところで、Raynaud の結果のようなものをおもくみれば、$l$ 的なものがあるような状況において、(曲線の範囲で、) $p$ 的な部分についても色々遠アーベルの群論的なことがいえるのではないかとおもう。
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
