@@ -31,14 +31,14 @@ In this section, we shall prepare some facts on the geometry of hyperbolic polyc
         \item the finite \'{e}tale morphism $D \to S$ is of degree $r$;
         \item $X$ is isomorphic to $X^\cpt \setminus D$ as a scheme over $S$.
       \end{itemize}
-    \item We shall say that $X$ is a \emph{hyperbolic polycurve} (of relative dimension $n$) over $S$ (resp. \emph{stable polycurve} (of relative dimension $n$)) if there exist
+    \item We shall say that $X$ is a \emph{hyperbolic polycurve} (of relative dimension $n$) over $S$ (respectively, \emph{stable polycurve} (of relative dimension $n$)) if there exist
       \begin{itemize}
         \item a positive integer $n$;
         \item a factorization of the structure morphism $X \to S$ (which is not necessarily uniquely determined by $X$) \[X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = S\]
       \end{itemize}
     such that
       \begin{itemize}
-        \item for each $i = 1, \ldots, n$, the morphism $X_i \to X_{i - 1}$ is a hyperbolic curve over $X_{i - 1}$ (resp. a stable curve over $X_{i - 1}$).
+        \item for each $i = 1, \ldots, n$, the morphism $X_i \to X_{i - 1}$ is a hyperbolic curve over $X_{i - 1}$ (respectively, a stable curve over $X_{i - 1}$).
       \end{itemize}
     We shall refer to the above morphism $X = X_n \to X_{n - 1}$ as a \emph{parametrizing morphism} for $X$ and refer to the above factorization as a \emph{sequence of parametrizing morphisms} or \emph{parametrization} for $X$.
   \end{enumerate}
@@ -399,14 +399,14 @@ It follows immediately from the definitions involved.
   
   By \cite[Theorem 1.4]{Kisin}, the morphism $\GFG{X}^\ell \to \pi_1(\model{X}^{\log, \mathrm{geom}})^\ell$, which is obtained by taking the maximal pro-$\ell$ quotients of the morphism $\GFG{X} \to \pi_1(\model{X}^{\log, \mathrm{geom}})$, is an isomorphism. Now, by chasing the diagram above, the assertion in the lemma follows immediately.
 \end{proof}
-% #endregion
+
 
 \begin{defn}
   Let $K$ be a complete discrete valuation field. We shall refer to the profinite group $(G_K/P_K)/(I_K/P_K)^{(\ell')}$ as the \emph{$\ell$-tame absolute Galois group} of $K$, where $(I_K/P_K)^{(\ell')}$ is the maximal prime-to-$\ell$ quotient of $I_K/P_K$. We shall write $bs{K}$ for the $\ell$-tame absolute Galois group of $K$.
 \end{defn}
 
 \begin{defn}
-  Let $K$ be a field, and let $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ be a hyperbolic polycurve over $K$. Let $\ell$ be a prime number which is invertible in $\mathcal{O}_K$. Assume that $X$ admits a compactified stable model $\model{X} = \model{X}_n \to \model{X}_{n - 1} \to \cdots \to \model{X}_1 \to \model{X}_0 = \Spec \, \mathcal{O}_K$ with respect to its parametrization, and geometrically pro-$\ell$-exact.
+  Let $K$ be a complete discrete valuation field, and let $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ be a hyperbolic polycurve over $K$. Let $\ell$ be a prime number which is invertible in $\mathcal{O}_K$. Assume that $X$ admits a compactified stable model $\model{X} = \model{X}_n \to \model{X}_{n - 1} \to \cdots \to \model{X}_1 \to \model{X}_0 = \Spec \, \mathcal{O}_K$ with respect to its parametrization, and geometrically pro-$\ell$-exact.
   \begin{enumerate}
     \item Let $G_K \to \Out(\GFG{X}^\ell)$ be the outer representation induced by the exact sequence $1 \to \GFG{X}^\ell \to \GPRFG{\ell}{X} \to G_K \to 1$. By Lemma \ref{TamenessOfOuterRepresentationOfGeometricallyProEllExactHyperbolicPolycurvesAdmittingCompactifiedStableModels}, the outer representation $G_K \to \Out(\GFG{X}^\ell)$ factors through the profinite group $G_K/P_K$, where $P_K$ is the wild inertia subgroup of $G_K$. Since $\GFG{X}^\ell$ is slim (cf. Lemma \ref{SlimnessOfGeometricProEllFundamentalGroupOfGeometricallyProEllExactHyperbolicPolycurves}), we obtain a exact sequence of profinite groups
     \[
@@ -433,44 +433,139 @@ It follows immediately from the definitions involved.
 \end{defn}
 
 \begin{rem}
-  For a hyperbolic polycurve $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ over a field $K$, $X$ is graphically inert if and only if for each stratum point $\eta$ of $X_i$ ($0 \leq i \leq n - 1$), the dual graph of the hyperbolic curve $X_{i + 1} \times_{X_i} \eta$ over the field $\kappa(\eta)$ is split. Moreover, this condition is equivalent to the condition that for every stratum $A$ of $\model{X}_i$ ($1 \leq i \leq n$), letting $\overline{A}$ be the image of $A$ in $\model{X}_{i - 1}$, the induced morphism $A \to \overline{A}$ is geometrically connected. Thus, if $X$ is graphically inert and $A$ is a stratum of $\model{X}_i$ ($1 \leq i \leq n$) such that $\sign{\eta_A}(i) = \textC$ (resp. $\sign{\eta_A}(i) = \textN$), where $\eta_A$ is the generic point of $A$, then the morphism $A \to \overline{A}$ is isomorphism (resp. isomorphism).
+  For a hyperbolic polycurve $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ over a field $K$, $X$ is graphically inert if and only if for each stratum point $\eta$ of $X_i$ ($0 \leq i \leq n - 1$), the dual graph of the hyperbolic curve $X_{i + 1} \times_{X_i} \eta$ over the field $\kappa(\eta)$ is split. Moreover, this condition is equivalent to the condition that for every stratum $A$ of $\model{X}_i$ ($1 \leq i \leq n$), letting $\overline{A}$ be the image of $A$ in $\model{X}_{i - 1}$, the induced morphism $A \to \overline{A}$ is geometrically connected. Thus, if $X$ is graphically inert and $A$ is a stratum of $\model{X}_i$ ($1 \leq i \leq n$) such that $\sign{\eta_A}(i) = \textC$ (respectively, $\sign{\eta_A}(i) = \textN$), where $\eta_A$ is the generic point of $A$, then the morphism $A \to \overline{A}$ is isomorphism (respectively, isomorphism).
 \end{rem}
 
 \begin{defn}
-  Let $K$ be a complete discrete valuation field, $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ a hyperbolic polycurve over $K$. Let $K^\ur$ be the maximal unramified extension of $K$, let $k$ be the residue field of $K$, and let $\overline{k}$ be an algebraic closure of $k$. Let $\ell$ be a prime number which is invertible in $\mathcal{O}_K$. Assume that $X$ admits a compactified stable model $\model{X} = \model{X}_n \to \model{X}_{n - 1} \to \cdots \to \model{X}_1 \to \model{X}_0 = \Spec \, \mathcal{O}_K$ with respect to its parametrization, and that $X$ is pro-$\ell$-exact and graphically inert. Let $\mathfrak{A}$ be the stratification of $\model{X}_n$ obtained by applying the construction in Lemma \ref{StratificationOfStableCompactification} to the hyperbolic polycurve $X_n$. Let $A$ be a stratum of $\mathfrak{A}$. Let $\eta_A$ be the generic point of $A$. Let $a^\log$ be a log geometric point of $A^\log$ lying over a geometric point $a$ of $A$. 
+  Let $K$ be a complete discrete valuation field, $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ a hyperbolic polycurve over $K$. Let $K^\ur$ be the maximal unramified extension of $K$, let $k$ be the residue field of $K$, and let $\overline{k}$ be an algebraic closure of $k$. Let $\ell$ be a prime number which is invertible in $\mathcal{O}_K$. Assume that $X$ admits a compactified stable model $\model{X} = \model{X}_n \to \model{X}_{n - 1} \to \cdots \to \model{X}_1 \to \model{X}_0 = \Spec \, \mathcal{O}_K$ with respect to its parametrization, and that $X$ is inertia pro-$\ell$-exact and graphically inert. Let $\mathfrak{A}$ be the stratification of $\model{X}_n$ obtained by applying the construction in Lemma \ref{StratificationOfStableCompactification} to the hyperbolic polycurve $X_n$. Let $A$ be a stratum of $\mathfrak{A}$. Let $\eta_A$ be the generic point of $A$. Let $a^\log$ be a log geometric point of $A^\log$ lying over a geometric point $a$ of $A$.
   \begin{enumerate}
-    \item Assume that $\sign{\eta_A}(0) = \textG$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to G_K$ as the \emph{geometric pro-$\ell$ decomposition group} of $A$, and we shall write $\GPRDG{\ell}{A}$ for the geometric pro-$\ell$ decomposition group of $A$.
-    \item Assume that $\sign{\eta_A}(0) = \textG$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to \Gal(K^\ur/K)$ as the \emph{inertia pro-$\ell$ decomposition group} of $A$, and we shall write $\IPRDG{\ell}{A}$ for the inertia pro-$\ell$ decomposition group of $A$. Here, we note that the Galois group $\Gal(K^\ur/K)$ is naturally isomorphic to the absolute Galois group $G_k$ of the residue field $k$ of $K$.
-    \item Assume that $\sign{\eta_A}(0) = \textS$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to \pi_1(\Spec\, \mathcal{O}_K^\log, \overline{s}^\log)$ as the \emph{geometric pro-$\ell$ decomposition group} of $A$, where $\overline{s}^\log$ is a log geometric point which is the image of $a^\log$ in $\Spec \, \mathcal{O}_K^\log$, and we shall write $\GPRDG{\ell}{A}$ for the geometric pro-$\ell$ decomposition group of $A$.
-    \item Assume that $\sign{\eta_A}(0) = \textS$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to G_k$ as the \emph{inertia pro-$\ell$ decomposition group} of $A$, and we shall write $\IPRDG{\ell}{A}$ for the inertia pro-$\ell$ decomposition group of $A$.
-    \item We obtain the exact sequence of profinite groups
+    \item Assume that $\sign{\eta_A}(0) = \textG$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to G_K$ (respectively, $\pi_1(A, a) \to G_K$) as the \emph{geometric pro-$\ell$ decomposition group} of $A$ (respectively, \emph{geometric pro-$\ell$ base-decomposition group} of $A$), and we shall write $\GPRDG{\ell}{A}$ (respectively, $\GPRBDG{\ell}{A}$) for the geometric pro-$\ell$ decomposition group of $A$ (respectively, the geometric pro-$\ell$ base-decomposition group of $A$).
+    \item Assume that $\sign{\eta_A}(0) = \textG$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to \Gal(K^\ur/K)$ (respectively, $\pi_1(A, a) \to \Gal(K^\ur/K)$) as the \emph{inertia pro-$\ell$ decomposition group} of $A$ (respectively, \emph{inertia pro-$\ell$ base-decomposition group} of $A$), and we shall write $\IPRDG{\ell}{A}$ (respectively, $\IPRBDG{\ell}{A}$) for the inertia pro-$\ell$ decomposition group of $A$ (respectively, the inertia pro-$\ell$ base-decomposition group of $A$). Here, we note that the Galois group $\Gal(K^\ur/K)$ is naturally isomorphic to the absolute Galois group $G_k$ of the residue field $k$ of $K$.
+    \item Assume that $\sign{\eta_A}(0) = \textG$. Then we obtain the exact sequence of profinite groups
     \[
       1 \to \IPRDG{\ell}{A} \to \pi_1(A^\log, a^\log)/H \to G_k \to 1,
     \]
-    where $H$ is the kernel of the morphism $\Ker(\pi_1(A^\log, a^\log) \to G_k) \to \IPRDG{\ell}{A}$. We shall refer to the profinite group $\pi_1(A^\log, a^\log)/H$ as the \emph{$\ell$-tamely reduced geometrically pro-$\ell$ decomposition group} of $A$, and we shall write $\lTRGPRDG{\ell}{A}$ for the $\ell$-tamely reduced geometrically pro-$\ell$ decomposition group of $A$.
+    (respectively, the exact sequence of profinite groups
+    \[
+      1 \to \IPRBDG{\ell}{A} \to \pi_1(A, a)/H \to G_k \to 1,)
+    \]
+    where $H$ is the kernel of the natural morphism $\Ker(\pi_1(A^\log, a^\log) \to G_k) \to \IPRDG{\ell}{A}$ (respectively, $\Ker(\pi_1(A, a) \to G_k) \to \IPRBDG{\ell}{A}$). We shall refer to the profinite group $\pi_1(A^\log, a^\log)/H$ (respectively, $\pi_1(A, a)/H$) as the \emph{$\ell$-tamely reduced geometrically pro-$\ell$ decomposition group} of $A$ (respectively, \emph{$\ell$-tamely reduced geometrically pro-$\ell$ base-decomposition group} of $A$), and we shall write $\lTRGPRDG{\ell}{A}$ (respectively, $\lTRGPRBDG{\ell}{A}$) for the $\ell$-tamely reduced geometrically pro-$\ell$ decomposition group of $A$. We abbreviate the term ``$\ell$-tamely reduced geometrically pro-$\ell$ decomposition group'' (respectively, ``$\ell$-tamely reduced geometrically pro-$\ell$ base-decomposition group'') to ``$\ell$-TR geometrically pro-$\ell$ decomposition group'' (respectively, ``$\ell$-TR geometrically pro-$\ell$ base-decomposition group'').
+    \item Assume that $\sign{\eta_A}(0) = \textS$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to \pi_1(\Spec\, \mathcal{O}_K^\log, \overline{s}^\log)$ (respectively, $\pi_1(A, a) \to G_k$) as the \emph{geometric pro-$\ell$ decomposition group} of $A$ (respectively, \emph{geometric pro-$\ell$ base-decomposition group} of $A$), where $\overline{s}^\log$ is a log geometric point which is the image of $a^\log$ in $\Spec \, \mathcal{O}_K^\log$, and we shall write $\GPRDG{\ell}{A}$ (respectively, $\GPRBDG{\ell}{A}$) for the geometric pro-$\ell$ decomposition group of $A$ (respectively, the geometric pro-$\ell$ base-decomposition group of $A$).
+    \item Assume that $\sign{\eta_A}(0) = \textS$. Then we shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to G_k$ as the \emph{inertia pro-$\ell$ decomposition group} of $A$, and we shall write $\IPRDG{\ell}{A}$ for the inertia pro-$\ell$ decomposition group of $A$.
+    \item Assume that $\sign{\eta_A}(0) = \textS$. Then we obtain the exact sequence of profinite groups
+    \[
+      1 \to \IPRDG{\ell}{A} \to \pi_1(A^\log, a^\log)/H \to G_k \to 1,
+    \]
+    where $H$ is the kernel of the natural morphism $\Ker(\pi_1(A^\log, a^\log) \to G_k) \to \IPRDG{\ell}{A}$. We shall refer to the profinite group $\pi_1(A^\log, a^\log)/H$ as the \emph{$\ell$-tamely reduced geometrically pro-$\ell$ decomposition group} of $A$, and we shall write $\lTRGPRDG{\ell}{A}$ for the $\ell$-tamely reduced geometrically pro-$\ell$ decomposition group of $A$. We abbreviate the term ``$\ell$-tamely reduced geometrically pro-$\ell$ decomposition group'' to ``$\ell$-TR geometrically pro-$\ell$ decomposition group''.
     \item We shall refer to the maximal pro-$\ell$ quotient of the kernel of the morphism $\pi_1(A^\log, a^\log) \to \pi_1(A, a)$ as the \emph{pro-$\ell$ inertia group} of $A$, and we shall write $\PRIG{\ell}{A}$ for the pro-$\ell$ inertia group of $A$.
-    \item We shall refer to the kernel of the morphism $\PRIG{\ell}{A} \to (I_K/P_K)^\ell$ as the \emph{geometric pro-$\ell$ inertia group} of $A$, and we shall write $\GPRIG{\ell}{A}$ for the geometric pro-$\ell$ inertia group of $A$.
+    \item Assume that $\sign{\eta_A}(0) = \textS$. Then we obtain the natural morphism of profinite groups $\PRIG{\ell}{A} \to (I_k/P_k)^\ell$. We shall refer to the kernel of the morphism as the \emph{geometric pro-$\ell$ inertia group} of $A$, and we shall write $\GPRIG{\ell}{A}$ for the geometric pro-$\ell$ inertia group of $A$.
   \end{enumerate}
 \end{defn}
 
+% #endregion
+
 \begin{prop}[Decomposition groups and inertia groups associated to strata, certain exact sequences]
-  Let $K$ be a complete discrete valuation field, and let $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ be a hyperbolic polycurve over $K$. Let $\ell$ be a prime number which is invertible in $\mathcal{O}_K$. Assume that $X$ admits a compactified stable model $\model{X} = \model{X}_n \to \model{X}_{n - 1} \to \cdots \to \model{X}_1 \to \model{X}_0 = \Spec \, \mathcal{O}_K$ with respect to its parametrization, and that $X$ is geometrically pro-$\ell$-exact and graphically inert. Let $\mathfrak{A}$ be the stratification of $\model{X}_n$ obtained by applying the construction in Lemma \ref{StratificationOfStableCompactification} to the hyperbolic polycurve $X_n$. Let $A$ be a stratum of $\mathfrak{A}$, let $\overline{A}$ be the image of $A$ in $\model{X}_{n - 1}$, and let $\eta_A$ be the generic point of $A$. Let $a^\log$ be a log geometric point of $A^\log$ lying over a geometric point $a$ of $A$. Write $\overline{a}^\log$ for the image of $a^\log$ in $\overline{A}^\log$, and write $\overline{a}$ for the underlying geometric point of $\overline{a}^\log$. Then the following assertions hold.
+  Let $K$ be a complete discrete valuation field, and let $X = X_n \to X_{n - 1} \to \cdots \to X_1 \to X_0 = \Spec \, K$ be a hyperbolic polycurve over $K$. Let $\ell$ be a prime number which is invertible in $\mathcal{O}_K$. Assume that $X$ admits a compactified stable model $\model{X} = \model{X}_n \to \model{X}_{n - 1} \to \cdots \to \model{X}_1 \to \model{X}_0 = \Spec \, \mathcal{O}_K$ with respect to its parametrization, and that $X$ is inertia pro-$\ell$-exact and graphically inert. Let $\mathfrak{A}$ be the stratification of $\model{X}_n$ obtained by applying the construction in Lemma \ref{StratificationOfStableCompactification} to the hyperbolic polycurve $X_n$. Let $A$ be a stratum of $\mathfrak{A}$, let $\overline{A}$ be the image of $A$ in $\model{X}_{n - 1}$, and let $\eta_A$ be the generic point of $A$. Let $a$ be a geometric point of $A$, and let $\overline{a}$ be the image of $a$ in $\overline{A}$. Let $a^\log$ be a log geometric point of $A^\log$ lying over a geometric point $a$ of $A$. Write $\overline{a}^\log$ for the image of $a^\log$ in $\overline{A}^\log$. Then the following assertions hold.
   \begin{enumerate}
     \item The (natural) morphisms of profinite groups
     \[\GPRDG{\ell}{A} \to \GFG{X}^\ell,\]
     \[\IPRDG{\ell}{A} \to \IPRFG{\ell}{X},\]
     \[\lTRGPRDG{\ell}{A} \to \lTRGPRFG{\ell}{X}\]
     are injective.
-    \item The (natural) sequence of profinite groups
-    \[1 \to \GPRIG{\ell}{A} \to \GPRDG{\ell}{A} \to \GFG{A}^\ell \to 1,\]
-    \[\PRIG{\ell}{A} \to \IPRDG{\ell}{A}\]
-    are injective.
-    \item We identify $\PRIG{\ell}{A}$ with its image in $\IPRDG{\ell}{A}$ via the injective morphism described in (ii) above. Then the, 中心
-    \item rank, Galois action, Zell(1) oplus n
-    \item A vs. Abar
+    \item Assume that $\sign{\eta_A}(0) = \textG$. Now we consider the (natural) commutative diagram of profinite groups
+    \begin{center}
+      \begin{tikzpicture}[auto]
+        \node (A1) at (0, 2.4) {$1$};
+        \node (B1) at (0, 1.2) {$1$};
+        \node (C1) at (0, 0) {$1$};
+        \node (A2) at (2.0, 2.4) {$\PRIG{\ell}{A}$};
+        \node (B2) at (2.0, 1.2) {$\PRIG{\ell}{A}$};
+        \node (C2) at (2.0, 0) {$\PRIG{\ell}{A}$};
+        \node (A3) at (4.0, 2.4) {$\GPRDG{\ell}{A}$};
+        \node (B3) at (4.0, 1.2) {$\IPRDG{\ell}{A}$};
+        \node (C3) at (4.0, 0) {$\lTRGPRDG{\ell}{A}$};
+        \node (A4) at (6.0, 2.4) {$\GFG{A}^\ell$};
+        \node (B4) at (6.0, 1.2) {$\IPRDG{\ell}{A}$};
+        \node (C4) at (6.0, 0) {$\lTRGPRBDG{\ell}{A}$};
+        \node (A5) at (8.0, 2.4) {$1$};
+        \node (B5) at (8.0, 1.2) {$1$};
+        \node (C5) at (8.0, 0) {$1.$};
+        \draw[->] (A1) to node {} (A2);
+        \draw[->] (B1) to node {} (B2);
+        \draw[->] (C1) to node {} (C2);
+        \draw[->] (A2) to node {} (A3);
+        \draw[->] (B2) to node {} (B3);
+        \draw[->] (C2) to node {} (C3);
+        \draw[->] (A3) to node {} (A4);
+        \draw[->] (B3) to node {} (B4);
+        \draw[->] (C3) to node {} (C4);
+        \draw[->] (A4) to node {} (A5);
+        \draw[->] (B4) to node {} (B5);
+        \draw[->] (C4) to node {} (C5);
+        \draw[->] (A2) to node {\rotatebox{270}{$=$}} (B2);
+        \draw[->] (B2) to node {\rotatebox{270}{$=$}} (C2);
+        \draw[->] (A3) to node {\rotatebox{270}{$\subset$}} (B3);
+        \draw[->] (B3) to node {\rotatebox{270}{$\subset$}} (C3);
+        \draw[->] (A4) to node {\rotatebox{270}{$\subset$}} (B4);
+        \draw[->] (B4) to node {\rotatebox{270}{$\subset$}} (C4);
+      \end{tikzpicture}
+    \end{center}
+    Then all the horizontal sequences in the diagram are exact.
+    \item Assume that $\sign{\eta_A}(0) = \textS$. Now we consider the (natural) commutative diagram of profinite groups
+    \begin{center}
+      \begin{tikzpicture}[auto]
+        \node (A1) at (0, 2.4) {$1$};
+        \node (B1) at (0, 1.2) {$1$};
+        \node (C1) at (0, 0) {$1$};
+        \node (A2) at (2.0, 2.4) {$\GPRIG{\ell}{A}$};
+        \node (B2) at (2.0, 1.2) {$\PRIG{\ell}{A}$};
+        \node (C2) at (2.0, 0) {$\PRIG{\ell}{A}$};
+        \node (A3) at (4.0, 2.4) {$\GPRDG{\ell}{A}$};
+        \node (B3) at (4.0, 1.2) {$\IPRDG{\ell}{A}$};
+        \node (C3) at (4.0, 0) {$\lTRGPRDG{\ell}{A}$};
+        \node (A4) at (6.0, 2.4) {$\GFG{A}^\ell$};
+        \node (B4) at (6.0, 1.2) {$\GFG{A}^\ell$};
+        \node (C4) at (6.0, 0) {$\GPRFG{\ell}{A}$};
+        \node (A5) at (8.0, 2.4) {$1$};
+        \node (B5) at (8.0, 1.2) {$1$};
+        \node (C5) at (8.0, 0) {$1,$};
+        \draw[->] (A1) to node {} (A2);
+        \draw[->] (B1) to node {} (B2);
+        \draw[->] (C1) to node {} (C2);
+        \draw[->] (A2) to node {} (A3);
+        \draw[->] (B2) to node {} (B3);
+        \draw[->] (C2) to node {} (C3);
+        \draw[->] (A3) to node {} (A4);
+        \draw[->] (B3) to node {} (B4);
+        \draw[->] (C3) to node {} (C4);
+        \draw[->] (A4) to node {} (A5);
+        \draw[->] (B4) to node {} (B5);
+        \draw[->] (C4) to node {} (C5);
+        \draw[->] (A2) to node {\rotatebox{270}{$\subset$}} (B2);
+        \draw[->] (B2) to node {\rotatebox{270}{$=$}} (C2);
+        \draw[->] (A3) to node {\rotatebox{270}{$\subset$}} (B3);
+        \draw[->] (B3) to node {\rotatebox{270}{$\subset$}} (C3);
+        \draw[->] (A4) to node {\rotatebox{270}{$=$}} (B4);
+        \draw[->] (B4) to node {\rotatebox{270}{$\subset$}} (C4);
+      \end{tikzpicture}
+    \end{center}
+    where $\GPRFG{\ell}{A}$ is the geometrically pro-$\ell$ fundamental group of $A$. Then all the horizontal sequences in the diagram are exact.
+    \item Assume that $\sign{\eta_A}(n) = \textV$ (respectively, $\sign{\eta_A}(n) = \textC$; $\sign{\eta_A}(n) = \textN$). Let $A_\text{fib.}^\log$ be the log geometric fiber $A^\log \times_{\overline{A}^\log} \overline{a}^\log$. Then the natural sequence of profinite groups
+    \[
+      1 \to \pi_1(A_\text{fib.}^\log, a^\log)^\ell \to \GPRDG{\ell}{A} \to \GPRDG{\ell}{\overline{A}} \to 1,
+    \]
+    is exact.
+    \item In the notation of (iv), write $\GFG{X_n/X_{n - 1}}^\ell$ for the kernel of the natural morphism $\GFG{X_n}^\ell \to \GFG{X_{n - 1}}^\ell$. By the assertion (i) above, we can obtain the natural morphism of profinite groups $\pi_1(A_\text{fib.}^\log, a^\log)^\ell \to \GFG{X_n/X_{n - 1}}^\ell$. Then the morphism $\pi_1(A_\text{fib.}^\log, a^\log)^\ell \to \GFG{X_n/X_{n - 1}}^\ell$ is injective. Moreover, the image of the morphism $\pi_1(A_\text{fib.}^\log, a^\log)^\ell \to \GFG{X_n/X_{n - 1}}^\ell$ is a verticial subgroup (respectively, a cuspidal subgroup; a nodal subgroup) of $\GFG{X_n/X_{n - 1}}^\ell$, where we identify $\GFG{X_n/X_{n - 1}}^\ell$ with the [log geometric] pro-$\ell$ fundamental group of the log stable curve $\model{X}^\log_n \times_{\model{X}^\log_{n - 1}} \overline{a}^\log$ over the log geometric point $\overline{a}^\log$.
+    \item Let $r$ be the log-rank of $A^\log$. The pro-$\ell$ inertia group $\PRIG{\ell}{A}$ of $A$ is a free $\Int_\ell$-module of rank $r$. Moreover, with respect to the natural action of $\pi_1(A, a)$ on $\PRIG{\ell}{A}$, the pro-$\ell$ inertia group $\PRIG{\ell}{A}$ is isomorphic to the $r$-fold direct product of the pro-$\ell$ cyclotomes $\Int_\ell(1)$.
+    \item Assume that $\sign{\eta_A}(0) = \textS$. Then the geometric pro-$\ell$ inertia group $\GPRIG{\ell}{A}$ is a free $\Int_\ell$-module of rank $r - 1$, where $r$ is the log-rank of $A^\log$.
+    \item We identify $\PRIG{\ell}{A}$ with its image in $\IPRDG{\ell}{A}$ via the injective morphism described above. Then the equality $C(\IPRDG{\ell}{A}) = \PRIG{\ell}{A}$ holds.
   \end{enumerate}
 \end{prop}
+\begin{proof}
+  We verify assertions (i), (ii), (iii), (iv), and (v) simultaneously by induction on $n$. The case where $n = 0$ is trivial. Assume that $n > 0$ and that the assertions hold for smaller values of $n$.
 
+  We first observe, in light of the definition of the stratification, that the morphism $A^\log \to \overline{A}^\log$ is a hyperbolic curve over $\overline{A}^\log$ if $\sign{\eta_A}(n) = \textV$. Moreover, in that case, there is a compactification $A^\log_\cpt$ of $A^\log$ as a hyperbolic curve which is obtained as an irreducible component of $\model{X}^\log_n \times_{\model{X}^\log_{n - 1}} \overline{A}^\log$.
+\end{proof}
 
 
 
@@ -481,5 +576,5 @@ It follows immediately from the definitions involved.
 
 
 
-チェックポイント: strata vs. stratum 問題, complete うまくいってるか問題, cusp 忘れてないか問題, 概念の名前だいじょうぶか問題, Notation check,
+% チェックポイント: strata vs. stratum 問題, complete うまくいってるか問題, cusp 忘れてないか問題, 概念の名前だいじょうぶか問題, Notation check,
 

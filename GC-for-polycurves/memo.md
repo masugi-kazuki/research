@@ -5,3 +5,7 @@ l-admissible, bridge subspace, bridge-full, nodally amples
 K は今回は complete DVF, mixed char., l-cyclotomically full くらいの条件が要求される。residually perfect とかって必要 ? いらないとおもうけど.
 
 かく順番について、l-adm. の cofinality についてを最後にする (必要なものを用意する); ただし証明は早めに用意しておく。
+
+resp. はつかわない - すべて respectively で統一。
+
+text か mathrm 問題
