@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.7.2)  12 MAY 2026 21:12
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.7.2)  13 MAY 2026 02:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -688,7 +688,7 @@ Overfull \hbox (12.01956pt too wide) in paragraph at lines 400--401
  []
 
 
-Overfull \hbox (8.00781pt too wide) in paragraph at lines 414--416
+Overfull \hbox (8.00781pt too wide) in paragraph at lines 413--415
 \OT1/cmr/m/n/10 where $^^E[]$ is the pull-back of profi-nite groups $\OML/cmm/m/it/10 G[]=P[] \OMS/cmsy/m/n/10 ^^B[] []\OT1/cmr/m/n/10 (^^A[])$.
  []
 
@@ -697,13 +697,8 @@ Overfull \hbox (8.00781pt too wide) in paragraph at lines 414--416
 [18]
 
 [19]
-Overfull \hbox (30.93205pt too wide) in paragraph at lines 451--453
-\OML/cmm/m/it/10 A$ \OT1/cmr/m/n/10 (re-spec-tively, $\OML/cmm/m/it/10 `$\OT1/cmr/bx/n/10 -tamely re-duced ge-o-met-ri-cally pro-$\OML/cmm/m/it/10 `$ \OT1/cmr/bx/n/10 base-decomposition
- []
-
-
-Overfull \hbox (0.6385pt too wide) in paragraph at lines 451--453
-\OT1/cmr/m/n/10 decomposition group'') to ``$\OML/cmm/m/it/10 `$\OT1/cmr/m/n/10 -TR ge-o-met-ri-cally pro-$\OML/cmm/m/it/10 `$ \OT1/cmr/m/n/10 de-com-po-si-tion group''
+Overfull \hbox (3.57693pt too wide) in paragraph at lines 450--452
+\OT1/cmr/m/n/10 shall re-fer to the profi-nite group $\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]; a[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =H$ \OT1/cmr/m/n/10 (re-spec-tively, $\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A; a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =H$\OT1/cmr/m/n/10 )
  []
 
 
@@ -714,32 +709,39 @@ Overfull \hbox (0.6385pt too wide) in paragraph at lines 451--453
 
 [22]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 565.
-)
+(Font)              No change on input line 561.
+
 
 [23]
 
+[24]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 625.
+)
+
+[25] (./DTPSC.tex)
+
+[26] (./LogFullSubgroups.tex)
+
+[27] (./CorankOneIntersections.tex)
+
+[28] (./GraphStructure.tex)
+
+[29]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 61.
+(hyperref)                removing `math shift' on input line 77.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 61.
+(hyperref)                removing `math shift' on input line 77.
 
 (./Cofinality.tex
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 14.
 )
 
-[24] (./DTPSC.tex)
-
-[25] (./LogFullSubgroups.tex)
-
-[26] (./CorankOneIntersections.tex)
-
-[27] (./GraphStructure.tex)
-
-[28] (./Reference.tex
+[30] (./Reference.tex
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 4.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
@@ -764,22 +766,22 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 24.
 )
 
-[29] (./GC-for-polycurves.aux)
+[31] (./GC-for-polycurves.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `GC-for-polycurves.out' has not changed.
-(rerunfilecheck)             Checksum: 3D6D212F35850ECE407516D643BD632C;2273.
+(rerunfilecheck)             Checksum: 4DEBB8446815FFBD3BDB5CBD87B7343C;2273.
  ) 
 Here is how much of TeX's memory you used:
- 22679 strings out of 468532
- 430535 string characters out of 5449414
- 854622 words of memory out of 5000000
- 50844 multiletter control sequences out of 15000+600000
+ 22680 strings out of 468532
+ 430611 string characters out of 5449414
+ 854935 words of memory out of 5000000
+ 50845 multiletter control sequences out of 15000+600000
  697037 words of font info for 114 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  102i,8n,107p,2013b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on GC-for-polycurves.dvi (29 pages, 199068 bytes).
+Output written on GC-for-polycurves.dvi (31 pages, 221132 bytes).
