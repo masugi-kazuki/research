@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.7.2)  13 MAY 2026 02:46
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.7.2)  13 MAY 2026 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -670,25 +670,25 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 
 [16]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 350.
+(Font)              No change on input line 349.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 365.
+(Font)              No change on input line 364.
 
 
 [17]
-Overfull \hbox (7.52791pt too wide) in paragraph at lines 369--370
+Overfull \hbox (7.52791pt too wide) in paragraph at lines 368--369
 [][]\OT1/cmr/bx/n/10 Lemma 1.26 \OT1/cmr/m/n/10 (Tame-ness of the outer rep-re-sen-ta-tion of a ge-o-met-ri-cally pro-$\OML/cmm/m/it/10 `$\OT1/cmr/m/n/10 -exact
  []
 
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 372.
+(Font)              No change on input line 371.
 
-Overfull \hbox (12.01956pt too wide) in paragraph at lines 400--401
+Overfull \hbox (12.01956pt too wide) in paragraph at lines 399--400
 \OT1/cmr/m/n/10 tained by tak-ing the max-i-mal pro-$\OML/cmm/m/it/10 `$ \OT1/cmr/m/n/10 quo-tients of the mor-phism $^^A[] \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\U/euf/m/n/10 X[]\OT1/cmr/m/n/10 )$,
  []
 
 
-Overfull \hbox (8.00781pt too wide) in paragraph at lines 413--415
+Overfull \hbox (8.00781pt too wide) in paragraph at lines 412--414
 \OT1/cmr/m/n/10 where $^^E[]$ is the pull-back of profi-nite groups $\OML/cmm/m/it/10 G[]=P[] \OMS/cmsy/m/n/10 ^^B[] []\OT1/cmr/m/n/10 (^^A[])$.
  []
 
@@ -697,7 +697,7 @@ Overfull \hbox (8.00781pt too wide) in paragraph at lines 413--415
 [18]
 
 [19]
-Overfull \hbox (3.57693pt too wide) in paragraph at lines 450--452
+Overfull \hbox (3.57693pt too wide) in paragraph at lines 449--451
 \OT1/cmr/m/n/10 shall re-fer to the profi-nite group $\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]; a[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =H$ \OT1/cmr/m/n/10 (re-spec-tively, $\OML/cmm/m/it/10 ^^Y[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A; a\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =H$\OT1/cmr/m/n/10 )
  []
 
@@ -709,25 +709,32 @@ Overfull \hbox (3.57693pt too wide) in paragraph at lines 450--452
 
 [22]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 561.
+(Font)              No change on input line 560.
 
 
 [23]
+Overfull \hbox (6.0084pt too wide) in paragraph at lines 612--614
+[][]\OT1/cmr/bx/n/10 Proposition 1.35 \OT1/cmr/m/n/10 (Com-pu-ta-tion of the cen-ters of var-i-ous de-com-po-si-tion groups)\OT1/cmr/bx/n/10 .
+ []
+
+
 
 [24]
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
-(Font)              No change on input line 625.
-)
+(Font)              No change on input line 622.
 
-[25] (./DTPSC.tex)
 
-[26] (./LogFullSubgroups.tex)
+[25])
 
-[27] (./CorankOneIntersections.tex)
+[26] (./DTPSC.tex)
 
-[28] (./GraphStructure.tex)
+[27] (./LogFullSubgroups.tex)
 
-[29]
+[28] (./CorankOneIntersections.tex)
+
+[29] (./GraphStructure.tex)
+
+[30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 77.
@@ -741,7 +748,7 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 14.
 )
 
-[30] (./Reference.tex
+[31] (./Reference.tex
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 4.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
@@ -766,7 +773,7 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 24.
 )
 
-[31] (./GC-for-polycurves.aux)
+[32] (./GC-for-polycurves.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-06-01> patch level 1
@@ -776,12 +783,12 @@ Package rerunfilecheck Info: File `GC-for-polycurves.out' has not changed.
 (rerunfilecheck)             Checksum: 4DEBB8446815FFBD3BDB5CBD87B7343C;2273.
  ) 
 Here is how much of TeX's memory you used:
- 22680 strings out of 468532
- 430611 string characters out of 5449414
- 854935 words of memory out of 5000000
- 50845 multiletter control sequences out of 15000+600000
+ 22681 strings out of 468532
+ 430661 string characters out of 5449414
+ 856020 words of memory out of 5000000
+ 50846 multiletter control sequences out of 15000+600000
  697037 words of font info for 114 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 102i,8n,107p,2013b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,8n,107p,2010b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on GC-for-polycurves.dvi (31 pages, 221132 bytes).
+Output written on GC-for-polycurves.dvi (32 pages, 227584 bytes).
