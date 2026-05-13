@@ -14,3 +14,5 @@ slim の定義した？
 
 strata vs. stratum 問題, complete うまくいってるか問題, cusp 忘れてないか問題, 概念の名前だいじょうぶか問題, Notation check, 絶対 Galois 群の記号をマクロにしていない
 
+sgoa のことを notation convention にかく
+

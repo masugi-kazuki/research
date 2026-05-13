@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.7.2)  13 MAY 2026 17:40
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.uptex) (TeX Live 2025) (preloaded format=uplatex 2025.7.2)  14 MAY 2026 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,15 +726,22 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 
 [25])
 
-[26] (./DTPSC.tex)
+[26] (./DTPSC.tex
 
-[27] (./LogFullSubgroups.tex)
+[27]
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 35.
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
+(Font)              No change on input line 46.
+)
 
-[28] (./CorankOneIntersections.tex)
+[28] (./LogFullSubgroups.tex)
 
-[29] (./GraphStructure.tex)
+[29] (./CorankOneIntersections.tex)
 
-[30]
+[30] (./GraphStructure.tex)
+
+[31]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 77.
@@ -748,7 +755,7 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 14.
 )
 
-[31] (./Reference.tex
+[32] (./Reference.tex
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 4.
 LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
@@ -773,7 +780,7 @@ LaTeX Font Info:    Kanji font shape `JY2/mc/m/it' undefined
 (Font)              No change on input line 24.
 )
 
-[32] (./GC-for-polycurves.aux)
+[33] (./GC-for-polycurves.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-06-01> patch level 1
@@ -783,12 +790,12 @@ Package rerunfilecheck Info: File `GC-for-polycurves.out' has not changed.
 (rerunfilecheck)             Checksum: 4DEBB8446815FFBD3BDB5CBD87B7343C;2273.
  ) 
 Here is how much of TeX's memory you used:
- 22681 strings out of 468532
- 430661 string characters out of 5449414
- 856020 words of memory out of 5000000
- 50846 multiletter control sequences out of 15000+600000
+ 22689 strings out of 468532
+ 430731 string characters out of 5449414
+ 856103 words of memory out of 5000000
+ 50854 multiletter control sequences out of 15000+600000
  697037 words of font info for 114 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  102i,8n,107p,2010b,1164s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on GC-for-polycurves.dvi (32 pages, 227584 bytes).
+Output written on GC-for-polycurves.dvi (33 pages, 236252 bytes).

@@ -1,1 +1,52 @@
-In this section, we introduce the notion of Dehn-twist pointed stable curves type outer representations as a certain generalization of IPSC-type [cf. \cite[Definition 2.4, (i)]{NodNon}] and NN-type [cf. \cite[Definition 2.4, (iii)]{NodNon}] outer representations, and investigate their basic properties. We then investigate the natural outer representations of semi-graph of anabelioids associated to the strata defined in the previous section, and in particular verify that the outer representations of inertia groups are of Dehn-twist pointed stable curves type.
+\indent In this section, first, we review the basic theory of profinite Dehn multi-twists (cf. \cite[\S 4]{CbTpI}). We then introduce the notion of Dehn-twist pointed stable curves type outer representations as a certain generalization of IPSC-type [cf. \cite[Definition 2.4, (i)]{NodNon}] and SNN-type [cf. \cite[Definition 2.4, (iii)]{NodNon}] outer representations, and investigate their basic properties. Finally, we investigate the natural outer representations of semi-graph of anabelioids associated to the strata defined in the previous section, and in particular verify that the outer representations of inertia groups are of Dehn-twist pointed stable curves type.
+
+\begin{defn}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Write $\univG \to \Gcal$ for the universal [pro-]covering of $\Gcal$ corresponding to $\PiG$. Then we shall write
+  \[
+    \Dehn{\Gcal} \coloneqq \{ \alpha \in \Aut^{|\text{grph}|}(\Gcal) \mid \alpha_{\Gcal|_v} = \mathrm{id}_{\Gcal|_v} \text{ for any } v \in v(\Gcal) \}
+  \]
+  --- where we refer to \cite[Definition 2.1, (iii)]{CbTpI}, \cite[Definition 2.14, (ii)]{CbTpI}, \cite[Remark 2.5.1]{CbTpI}. We shall refer to an element of $\Dehn{\Gcal}$ as a \emph{profinite Dehn multi-twist} of $\Gcal$.
+\end{defn}
+
+\begin{defn}\label{SignedNodalGroup}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Write $\univG \to \Gcal$ for the universal [pro-]covering of $\Gcal$ corresponding to $\PiG$. Let $\univ{e} \in \Node{\univG}$, $e \coloneqq \univ{e}(\Gcal) \in \Node{\Gcal}$. Write $\univ{v_1}, \univ{v_2} \in \Vcal(\univ{e})$ for the two vertices of $\univG$ adjacent to $\univ{e}$. Let $M_1, M_2 \coloneqq \Pi_{\univ{e}}$ (respectively, $N_1, N_2 \coloneqq \Pi_e$). Write $\Delta_M$ (respectively, $\Delta_N$) be the image of the ``diagonal'' embedding $\Pi_{\univ{e}} \to M_1 \times M_2$; $x \mapsto (x, x)$ (respectively, $\Pi_e \to N_1 \times N_2$; $x \mapsto (x, x)$). We shall refer to $M_1 \times M_2 / \Delta_M$ (respectively, $N_1 \times N_2 / \Delta_N$) as the \emph{signed nodal group} associated to $\univ{e}$ (respectively, $e$), and denote it by $\sgnnodal{\univ{e}}$ (respectively, $\sgnnodal{e}$). Let $x \in \Pi_{\univ{e}}$ (respectively, $x \in \Pi_e$). We shall denote the image of $(x, 1) \in M_1 \times M_2$ (respectively, $(x, 1) \in N_1 \times N_2$) in $\sgnnodal{\univ{e}}$ (respectively, $\sgnnodal{e}$) by $[x, \univ{v_1}]$ (respectively, $[x, v_1]$), and the image of $(1, x) \in M_1 \times M_2$ (respectively, $(1, x) \in N_1 \times N_2$) in $\sgnnodal{\univ{e}}$ (respectively, $\sgnnodal{e}$) by $[x, \univ{v_2}]$ (respectively, $[x, v_2]$).
+\end{defn}
+
+\begin{rem}
+  In the notation of Definition \ref{SignedNodalGroup}, the signed nodal group $\sgnnodal{\univ{e}}$ associated to $\univ{e}$ can be naturally identified with the signed nodal group $\sgnnodal{e}$ associated to $e$.
+\end{rem}
+
+\begin{defn}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $\alpha \in \Dehn{\Gcal}$ be a profinite Dehn multi-twist of $\Gcal$. Let $\univ{e} \in \Node{\univG}$, $e \coloneqq \univ{e}(\Gcal) \in \Node{\Gcal}$. We define an element of $\sgnnodal{\univ{e}}$ as follows.
+  \begin{itemize}
+  \item Let $\univ{v} \in \Vcal(\univ{e})$. Then there exists a unique lifting $\alpha[\univ{v}] \in \Aut(\PiG)$ of $\alpha$ such that $\alpha$ preserves $\Pi_{\univ{v}}$ and induces the identity on $\Pi_{\univ{v}}$. Here, letting $\univ{w} \in \Vcal(\univ{e})$ be the other vertex of $\univG$ adjacent to $\univ{e}$, $\alpha$ induces an inner automorphism of $\Pi_{\univ{w}}$. Therefore, there exists a unique element $\delta_{\alpha, \univ{v}} \in \Pi_{\univ{e}}$ such that $\alpha[\univ{v}]|_{\Pi_{\univ{w}}}$ coincides with the inner automorphism of $\Pi_{\univ{w}}$ arising from the conjugation action of $\delta_{\alpha, \univ{v}}$. We shall denote the element $[\delta_{\alpha, \univ{v}}, \univ{v}]$ of $\sgnnodal{\univ{e}}$ by $\delta_{\alpha, \univ{e}}$.
+  \end{itemize}
+  We note, in light of \cite[Lemma 4.6]{CbTpI}, that this definition is well-defined. We denote the morphism $\Dehn{\Gcal} \to \sgnnodal{\univ{e}}$ given by assigning $\alpha \mapsto \delta_{\alpha, \univ{e}}$ by $\Dpar{\univ{e}}$.
+\end{defn}
+
+\begin{lem}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $\univ{e} \in \Node{\univG}$, $e \coloneqq \univ{e}(\Gcal) \in \Node{\Gcal}$. Then the following hold.
+  \begin{enumerate}
+    \item
+    \item
+  \end{enumerate}
+\end{lem}
+\begin{proof}
+  
+\end{proof}
+
+\begin{defn}
+  DTPSC-type outer representation, 退化している node
+\end{defn}
+
+\begin{lem}
+  center とかの群論の計算、inertia の話
+\end{lem}
+\begin{proof}
+  NodNon など
+\end{proof}
+
+
+inertia の線形代数は、かかないといけない
+
+あとは、strata に付随する外表現 (環論との対応)

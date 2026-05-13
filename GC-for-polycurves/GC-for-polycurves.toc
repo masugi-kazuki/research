@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Preliminaries on Logarithmic Geometry of Hyperbolic Polycurves}{5}{section.1}%
 \contentsline {section}{\numberline {2}Dehn-twist Pointed Stable Curves type Outer Representations}{27}{section.2}%
-\contentsline {section}{\numberline {3}Reconstruction of Log-full Subgroups}{28}{section.3}%
-\contentsline {section}{\numberline {4}Reconstruction of Dimensions via Corank 1 Intersections}{29}{section.4}%
-\contentsline {section}{\numberline {5}Reconstruction of the Graph-theoretic Structure of Proper Hyperbolic Polycurves of Dimension 2}{30}{section.5}%
-\contentsline {section}{\numberline {6}Cofinality of $l$-admissible finite \'{e}tale coverings}{31}{section.6}%
+\contentsline {section}{\numberline {3}Reconstruction of Log-full Subgroups}{29}{section.3}%
+\contentsline {section}{\numberline {4}Reconstruction of Dimensions via Corank 1 Intersections}{30}{section.4}%
+\contentsline {section}{\numberline {5}Reconstruction of the Graph-theoretic Structure of Proper Hyperbolic Polycurves of Dimension 2}{31}{section.5}%
+\contentsline {section}{\numberline {6}Cofinality of $l$-admissible finite \'{e}tale coverings}{32}{section.6}%
