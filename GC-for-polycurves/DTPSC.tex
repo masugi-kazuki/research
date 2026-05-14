@@ -16,27 +16,48 @@
   In the notation of Definition \ref{SignedNodalGroup}, the signed nodal group $\sgnnodal{\univ{e}}$ associated to $\univ{e}$ can be naturally identified with the signed nodal group $\sgnnodal{e}$ associated to $e$.
 \end{rem}
 
+\begin{rem}\label{CyclotomesAndSignedNodalGroup}
+  By \cite[Corollary 3.9, (vi)]{CbTpI}, there exists a natural isomorphism $\sgnnodal{e} \cong \Cyclo_\Gcal$, where we write $\Cyclo_\Gcal$ for the cyclotome associated to $\Gcal$ (cf. \cite[Definition 3.8, (i)]{CbTpI}).
+\end{rem}
+
 \begin{defn}
-  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $\alpha \in \Dehn{\Gcal}$ be a profinite Dehn multi-twist of $\Gcal$. Let $\univ{e} \in \Node{\univG}$, $e \coloneqq \univ{e}(\Gcal) \in \Node{\Gcal}$. We define an element of $\sgnnodal{\univ{e}}$ as follows.
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type.
+  \begin{enumerate}
+    \item Let $\alpha \in \Dehn{\Gcal}$ be a profinite Dehn multi-twist of $\Gcal$. Let $\univ{e} \in \Node{\univG}$, $e \coloneqq \univ{e}(\Gcal) \in \Node{\Gcal}$. We define an element of $\sgnnodal{\univ{e}}$ as follows.
   \begin{itemize}
-  \item Let $\univ{v} \in \Vcal(\univ{e})$. Then there exists a unique lifting $\alpha[\univ{v}] \in \Aut(\PiG)$ of $\alpha$ such that $\alpha$ preserves $\Pi_{\univ{v}}$ and induces the identity on $\Pi_{\univ{v}}$. Here, letting $\univ{w} \in \Vcal(\univ{e})$ be the other vertex of $\univG$ adjacent to $\univ{e}$, $\alpha$ induces an inner automorphism of $\Pi_{\univ{w}}$. Therefore, there exists a unique element $\delta_{\alpha, \univ{v}} \in \Pi_{\univ{e}}$ such that $\alpha[\univ{v}]|_{\Pi_{\univ{w}}}$ coincides with the inner automorphism of $\Pi_{\univ{w}}$ arising from the conjugation action of $\delta_{\alpha, \univ{v}}$. We shall denote the element $[\delta_{\alpha, \univ{v}}, \univ{v}]$ of $\sgnnodal{\univ{e}}$ by $\delta_{\alpha, \univ{e}}$.
+    \item Let $\univ{v} \in \Vcal(\univ{e})$. Then there exists a unique lifting $\alpha[\univ{v}] \in \Aut(\PiG)$ of $\alpha$ such that $\alpha$ preserves $\Pi_{\univ{v}}$ and induces the identity on $\Pi_{\univ{v}}$. Here, letting $\univ{w} \in \Vcal(\univ{e})$ be the other vertex of $\univG$ adjacent to $\univ{e}$, $\alpha$ induces an inner automorphism of $\Pi_{\univ{w}}$. Therefore, there exists a unique element $\delta_{\alpha, \univ{v}} \in \Pi_{\univ{e}}$ such that $\alpha[\univ{v}]|_{\Pi_{\univ{w}}}$ coincides with the inner automorphism of $\Pi_{\univ{w}}$ arising from the conjugation action of $\delta_{\alpha, \univ{v}}$. We shall denote the element $[\delta_{\alpha, \univ{v}}, \univ{v}]$ of $\sgnnodal{\univ{e}}$ by $\delta_{\alpha, \univ{e}}$.
   \end{itemize}
-  We note, in light of \cite[Lemma 4.6]{CbTpI}, that this definition is well-defined. We denote the morphism $\Dehn{\Gcal} \to \sgnnodal{\univ{e}}$ given by assigning $\alpha \mapsto \delta_{\alpha, \univ{e}}$ by $\Dpar{\univ{e}}$.
+  We note, in light of \cite[Lemma 4.6]{CbTpI}, that this definition is well-defined. We denote the morphism $\Dehn{\Gcal} \to \sgnnodal{\univ{e}}$ given by assigning $\alpha \mapsto \delta_{\alpha, \univ{e}}$ by $\Dpar{\univ{e}}$. Moreover, the composite morphism $\Dehn{\Gcal} \xrightarrow{\Dpar{\univ{e}}} \sgnnodal{\univ{e}} \cong \sgnnodal{e}$ depends only on $e$ (cf. \cite[Lemma 4.6]{CbTpI}), and we shall denote it by $\Dpar{e}$.
+  \item We shall write \[\Dparall{\Gcal} \coloneqq \bigoplus_{e \in \Node{\Gcal}} \Dpar{e} : \Dehn{\Gcal} \to \bigoplus_{e \in \Node{\Gcal}} \sgnnodal{e}.\]
+  \end{enumerate}
 \end{defn}
 
-\begin{lem}
-  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $\univ{e} \in \Node{\univG}$, $e \coloneqq \univ{e}(\Gcal) \in \Node{\Gcal}$. Then the following hold.
+\begin{lem}[Description of profinite Dehn multi-twists]\label{DescriptionOfDehnMultiTwists}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Then the following hold.
   \begin{enumerate}
-    \item
-    \item
+    \item The morphism $\Dparall{\Gcal} : \Dehn{\Gcal} \to \bigoplus_{e \in \Node{\Gcal}} \sgnnodal{e}$ is isomorphism.
+    \item Let $\alpha \in \Dehn{\Gcal}$ be a profinite Dehn multi-twist of $\Gcal$. For $e \in \Node{\Gcal}$, write $\delta_{\alpha, e} \coloneqq \Dpar{e}(\alpha)$. Let $\B(\Gcal)$ be the Galois category associated to $\Gcal$, $\alpha^* \colon \B(\Gcal) \to \B(\Gcal)$ the autoequivalence of $\B(\Gcal)$ induced by $\alpha$. Then $\alpha^*$ is isomorphic to the autoequivalence $\Psi_{\{\delta_{\alpha, e}\}_{e \in \Node{\Gcal}}}$ of $\B(\Gcal)$ given as follows:
+    \begin{itemize}
+      \item Let $\{S_v, \phi_e\} \in \B(\Gcal)$, where $S_v \in \B(\Gcal|_v)$ for each vertex $v$; for each node $e$, with branches $b_1$, $b_2$ abutting to vertices $v_1$, $v_2$, respectively, $\phi_e \colon \{(b_1)_*\}^*S_{v_1} \xrightarrow{\sim} \{(b_2)_*\}^*S_{v_2}$ is an isomorphism in $\B(\Gcal|_e)$. We define $\Psi_{\{\delta_{\alpha, e}\}_{e \in \Node{\Gcal}}}(\{S_v, \phi_e\})$ as follows. For each node $e$, we shall write $\delta_{\alpha, v_1}$ for the [unique] element of $\Pi_{\univ{e}}$ such that $[\delta_{\alpha, v_1}, \univ{v_1}] = \delta_{\alpha, e}$. Then we define $\Psi_{\{\delta_{\alpha, e}\}_{e \in \Node{\Gcal}}}(\{S_v, \phi_e\})$ to be the object $\{S_v, \phi'_e\}$ of $\B(\Gcal)$, where for each node $e$, with branches $b_1$, $b_2$ abutting to vertices $v_1$, $v_2$, respectively, $\phi'_e$ is the isomorphism in $\B(\Gcal|_e)$ obtained as the composite of the following isomorphisms: we shall refer to the composite isomorphism $\phi_e \circ \mathsf{action}_{\delta_{\alpha, v_1}} \colon \{(b_1)_*\}^*S_{v_1} \xrightarrow{\sim} \{(b_2)_*\}^*S_{v_2}$, $\phi'_e$, where $\mathsf{action}_{\delta_{\alpha, v_1}}$ is the isomorphism of $\{(b_1)_*\}^*S_{v_1}$ arising from the action of $\delta_{\alpha, v_1}$.
+    \end{itemize}
   \end{enumerate}
 \end{lem}
 \begin{proof}
-  
+  Assertion (i) follows immediately from \cite[Theorem 4.8, (iv)]{CbTpI} and Remark \ref{CyclotomesAndSignedNodalGroup}.
+
+  Assertion (ii) follows immediately from the various definitions involved.
 \end{proof}
 
 \begin{defn}
-  DTPSC-type outer representation, 退化している node
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$ [i.e., we are given a continuous homomorphism $\phi \colon J \to \Aut(\Gcal)$].
+  \begin{enumerate}
+    \item We shall write $\PiG^J$ for the profinite group $\PiG^\Aut \times_{\Aut(\Gcal)} J$ (cf. \cite[Definition 2.3]{CmbGC}).
+    \item We shall say that the representation $\phi \colon J \to \Aut(\Gcal)$, or the outer representation $J \to \Out(\PiG)$ induced by $\phi$, is of \emph{Dehn-twist pointed stable curves type} if the inequality $\phi(J) \cap \Dehn{\Gcal}$ holds. We abbreviate the term ``Dehn-twist pointed stable curves type'' to ``\emph{DTPSC-type}''.
+    \item Let $r$ be an integer. We shall say that the representation $\phi \colon J \to \Aut(\Gcal)$, or the outer representation $J \to \Out(\PiG)$ induced by $\phi$, is of \emph{Dehn-twist pointed stable curves type of rank $r$} if the representation is of DTPSC-type, and $J$ is isomorphic to the free pro-$\Sigma$ abelian group of rank $r$. We abbreviate the term ``Dehn-twist pointed stable curves type of rank $r$'' to ``\emph{DTPSC-type of rank $r$}''.
+    \item Let $J'$ be a subgroup of $J$. We shall refer to the representation $J' \to \Aut(\Gcal)$ obtained by restricting $\phi$ to $J'$ as the \emph{restriction} of $\phi$ to $J'$.
+    \item Let $e \in \Node{\Gcal}$. Assume that $\phi$ is of DTPSC-type. Then we shall say that the representation $\phi$ is \emph{degenerate at $e$} if the composite morphism $J \xrightarrow{\phi} \Dehn{\Gcal} \xrightarrow{\Dpar{e}} \sgnnodal{e}$ is trivial. We shall say that $\phi$ is \emph{non-degenerate at $e$} if $\phi$ is not degenerate at $e$. We shall say that $\phi$ is \emph{non-degenerate} if $\phi$ is non-degenerate at $e$ for any $e \in \Node{\Gcal}$.
+    \item Assume that $\phi$ is of DTPSC-type. Let $D$ be a subset of $\Node{\Gcal}$. Assume that $\phi$ is degenerate at $e$ for any $e \in D$. Write $\Gcal_{\leadsto D}$ for the generization of $\Gcal$ with respect to $D$ (cf. \cite[Definition 2.8]{CbTpI}). Then, by \cite[Theorem 4.8, (ii)]{CbTpI}, the representation $\phi$ induces a natural representation $J \to \Dehn{\Gcal_{\leadsto D}} \subset \Aut(\Gcal_{\leadsto D})$. We shall refer to the representation $J \to \Aut(\Gcal_{\leadsto D})$ as the \emph{generization} of $\phi$ with respect to $D$.
+  \end{enumerate}
 \end{defn}
 
 \begin{lem}
