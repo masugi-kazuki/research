@@ -1,7 +1,7 @@
-\indent In this section, first, we review the basic theory of profinite Dehn multi-twists (cf. \cite[\S 4]{CbTpI}). We then introduce the notion of Dehn-twist pointed stable curves type outer representations as a certain generalization of IPSC-type [cf. \cite[Definition 2.4, (i)]{NodNon}] and SNN-type [cf. \cite[Definition 2.4, (iii)]{NodNon}] outer representations, and investigate their basic properties. Finally, we investigate the natural outer representations of semi-graph of anabelioids associated to the strata defined in the previous section, and in particular verify that the outer representations of inertia groups are of Dehn-twist pointed stable curves type.
+\indent In this section, first, we review the basic theory of profinite Dehn multi-twists (cf. \cite[\S 4]{CbTpI}). We then introduce the notion of Dehn-twist pointed stable curves type outer representations as a certain generalization of IPSC-type [cf. \cite[Definition 2.4, (i)]{NodNon}], SVA-type [cf. \cite[Definition 2.4, (ii)]{NodNon}] and SNN-type [cf. \cite[Definition 2.4, (iii)]{NodNon}] outer representations, and investigate their basic properties. Finally, we investigate the natural outer representations of semi-graph of anabelioids associated to the strata defined in the previous section, and in particular verify that the outer representations of inertia groups are of Dehn-twist pointed stable curves type.
 
 \begin{defn}
-  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Write $\univG \to \Gcal$ for the universal [pro-]covering of $\Gcal$ corresponding to $\PiG$. Then we shall write
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Then we shall write
   \[
     \Dehn{\Gcal} \coloneqq \{ \alpha \in \Aut^{|\text{grph}|}(\Gcal) \mid \alpha_{\Gcal|_v} = \mathrm{id}_{\Gcal|_v} \text{ for any } v \in v(\Gcal) \}
   \]
@@ -17,7 +17,7 @@
 \end{rem}
 
 \begin{rem}\label{CyclotomesAndSignedNodalGroup}
-  By \cite[Corollary 3.9, (vi)]{CbTpI}, there exists a natural isomorphism $\sgnnodal{e} \cong \Cyclo_\Gcal$, where we write $\Cyclo_\Gcal$ for the cyclotome associated to $\Gcal$ (cf. \cite[Definition 3.8, (i)]{CbTpI}).
+  By \cite[Corollary 3.9, (vi)]{CbTpI}, there exists a natural isomorphism $\sgnnodal{e} \cong \Cyclo_\Gcal$ (synchronization of cyclotomes), where we write $\Cyclo_\Gcal$ for the cyclotome associated to $\Gcal$ (cf. \cite[Definition 3.8, (i)]{CbTpI}).
 \end{rem}
 
 \begin{defn}
@@ -48,17 +48,102 @@
   Assertion (ii) follows immediately from the various definitions involved.
 \end{proof}
 
-\begin{defn}
+\begin{defn}\label{DefnDTPSCtype}
   Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$ [i.e., we are given a continuous homomorphism $\phi \colon J \to \Aut(\Gcal)$].
   \begin{enumerate}
     \item We shall write $\PiG^J$ for the profinite group $\PiG^\Aut \times_{\Aut(\Gcal)} J$ (cf. \cite[Definition 2.3]{CmbGC}).
-    \item We shall say that the representation $\phi \colon J \to \Aut(\Gcal)$, or the outer representation $J \to \Out(\PiG)$ induced by $\phi$, is of \emph{Dehn-twist pointed stable curves type} if the inequality $\phi(J) \cap \Dehn{\Gcal}$ holds. We abbreviate the term ``Dehn-twist pointed stable curves type'' to ``\emph{DTPSC-type}''.
+    \item We shall say that the representation $\phi \colon J \to \Aut(\Gcal)$, or the outer representation $J \to \Out(\PiG)$ induced by $\phi$, is of \emph{Dehn-twist pointed stable curves type} if the inequality $\phi(J) \subset \Dehn{\Gcal}$ holds. We abbreviate the term ``Dehn-twist pointed stable curves type'' to ``\emph{DTPSC-type}''.
     \item Let $r$ be an integer. We shall say that the representation $\phi \colon J \to \Aut(\Gcal)$, or the outer representation $J \to \Out(\PiG)$ induced by $\phi$, is of \emph{Dehn-twist pointed stable curves type of rank $r$} if the representation is of DTPSC-type, and $J$ is isomorphic to the free pro-$\Sigma$ abelian group of rank $r$. We abbreviate the term ``Dehn-twist pointed stable curves type of rank $r$'' to ``\emph{DTPSC-type of rank $r$}''.
     \item Let $J'$ be a subgroup of $J$. We shall refer to the representation $J' \to \Aut(\Gcal)$ obtained by restricting $\phi$ to $J'$ as the \emph{restriction} of $\phi$ to $J'$.
-    \item Let $e \in \Node{\Gcal}$. Assume that $\phi$ is of DTPSC-type. Then we shall say that the representation $\phi$ is \emph{degenerate at $e$} if the composite morphism $J \xrightarrow{\phi} \Dehn{\Gcal} \xrightarrow{\Dpar{e}} \sgnnodal{e}$ is trivial. We shall say that $\phi$ is \emph{non-degenerate at $e$} if $\phi$ is not degenerate at $e$. We shall say that $\phi$ is \emph{non-degenerate} if $\phi$ is non-degenerate at $e$ for any $e \in \Node{\Gcal}$.
+    \item Let $e \in \Node{\Gcal}$. Assume that $\phi$ is of DTPSC-type. Then we shall say that the representation $\phi$ is \emph{degenerate at $e$} if the image of the composite morphism $J \xrightarrow{\phi} \Dehn{\Gcal} \xrightarrow{\Dpar{e}} \sgnnodal{e}$ is not open. We shall say that $\phi$ is \emph{non-degenerate at $e$} if $\phi$ is not degenerate at $e$. We shall say that $\phi$ is \emph{non-degenerate} if $\phi$ is non-degenerate at $e$ for any $e \in \Node{\Gcal}$.
     \item Assume that $\phi$ is of DTPSC-type. Let $D$ be a subset of $\Node{\Gcal}$. Assume that $\phi$ is degenerate at $e$ for any $e \in D$. Write $\Gcal_{\leadsto D}$ for the generization of $\Gcal$ with respect to $D$ (cf. \cite[Definition 2.8]{CbTpI}). Then, by \cite[Theorem 4.8, (ii)]{CbTpI}, the representation $\phi$ induces a natural representation $J \to \Dehn{\Gcal_{\leadsto D}} \subset \Aut(\Gcal_{\leadsto D})$. We shall refer to the representation $J \to \Aut(\Gcal_{\leadsto D})$ as the \emph{generization} of $\phi$ with respect to $D$.
   \end{enumerate}
 \end{defn}
+
+\begin{rem}
+  We note that every outer representation of DTPSC-type has an [unique] generization which is non-degenerate.
+\end{rem}
+
+\begin{rem}
+  Assume $\# \Sigma = 1$. Then, it follows immediately from the various definitions involved that the image of the morphism $J \to \sgnnodal{e}$ is not open if and only if the morphism $J \to \sgnnodal{e}$ is trivial.
+\end{rem}
+
+\begin{rem}
+  We note that the notion of DTPSC-type is a certain generalization of the notion of SVA-type, introduced in \cite[Definition 2.4, (ii)]{NodNon}, and the property of being non-degenerate is a certain generalization of the property of being of NN-type, introduced in \cite[Definition 2.4, (iii)]{NodNon}.
+\end{rem}
+
+\begin{defn}\label{DefnDecompositionGroupInertiaGroup}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of DTPSC-type. In light of Definition \ref{DefnDTPSCtype}, we have an exact sequence
+  \[
+    1 \to \PiG \to \PiG^J \to J \to 1.
+  \]
+  \begin{enumerate}
+    \item Let $v \in \Vert{\Gcal}$ be a vertex and let $\Pi_v \subset \PiG$ be a verticial subgroup of $\PiG$ associated to $v$. Then we shall write
+    \[
+      D_v \coloneqq N_{\PiG^J}(\Pi_v) \subset \PiG^J \ \mathrm{(respectively, \ } I_v \coloneqq Z_{\PiG^J}(\Pi_v) \subset \PiG^J \mathrm{)}
+    \]
+    and refer to $D_v$ (respectively, $I_v$) as a \emph{decomposition subgroup} (respectively, \emph{inertia subgroup}) of $\PiG^J$ associated to $v$, or, alternatively, the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to the verticial subgroup $\Pi_v \subset \PiG$. If, moreover, the verticial subgroup $\Pi_v$ is the verticial subgroup associated to an element $\univ{v} \in \Vert{\Gcal}$, then we shall write $D_{\univ{v}} \coloneqq D_v$ (respectively, $I_{\univ{v}} \coloneqq I_v$) and refer to $D_{\univ{v}}$ (respectively, $I_{\univ{v}}$) as the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to $\univ{v}$.
+    \item Let $c \in \Cusp{\Gcal}$ be a cusp and let $\Pi_c \subset \PiG$ be a cuspidal subgroup of $\PiG$ associated to $c$. Then we shall write
+    \[
+      D_c \coloneqq N_{\PiG^J}(\Pi_c) \subset \PiG^J \ \mathrm{(respectively, \ } I_c \coloneqq \Pi_c \subset \PiG^J \mathrm{)}
+    \]
+    and refer to $D_c$ (respectively, $I_c$) as a \emph{decomposition subgroup} (respectively, \emph{inertia subgroup}) of $\PiG^J$ associated to $c$, or, alternatively, the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to the cuspidal subgroup $\Pi_c \subset \PiG$. If, moreover, the cuspidal subgroup $\Pi_c$ is the cuspidal subgroup associated to an element $\univ{c} \in \Cusp{\Gcal}$, then we shall write $D_{\univ{c}} \coloneqq D_c$ (respectively, $I_{\univ{c}} \coloneqq I_c$) and refer to $D_{\univ{c}}$ (respectively, $I_{\univ{c}}$) as the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to $\univ{c}$.
+    \item Let $e \in \Node{\Gcal}$ be an node and let $\Pi_e \subset \PiG$ be an edge subgroup of $\PiG$ associated to $e$. Then we shall write
+    \[
+      D_e \coloneqq N_{\PiG^J}(\Pi_e) \subset \PiG^J \ \mathrm{(respectively, \ } I_e \coloneqq Z_{\PiG^J}(\Pi_e) \subset \PiG^J \mathrm{)}
+    \]
+    and refer to $D_e$ (respectively, $I_e$) as a \emph{decomposition subgroup} (respectively, \emph{inertia subgroup}) of $\PiG^J$ associated to $e$, or, alternatively, the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to the nodal subgroup $\Pi_e \subset \PiG$. If, moreover, the nodal subgroup $\Pi_e$ is the nodal subgroup associated to an element $\univ{e} \in \Node{\Gcal}$, then we shall write $D_{\univ{e}} \coloneqq D_e$ (respectively, $I_{\univ{e}} \coloneqq I_e$) and refer to $D_{\univ{e}}$ (respectively, $I_{\univ{e}}$) as the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to $\univ{e}$.
+  \end{enumerate}
+\end{defn}
+
+\begin{rem}
+  We note here that while the terminology in Definition \ref{DefnDecompositionGroupInertiaGroup} may lack a certain internal consistency, preference was given to maintaining compatibility with the terminology used in \cite[Definition 2.2]{NodNon}.
+\end{rem}
+
+\begin{lem}[Basic Properties of Decomposition and Inertia Subgroups]\label{BasicPropertiesOfDecompositionAndInertiaSubgroups}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of DTPSC-type. Then the following hold.
+  \begin{enumerate}
+    \item Let $\univ{v} \in \Vert{\univG}$. Then the following equalities hold.
+    \begin{itemize}
+      \item $\PiG \cap I_{\univ{v}} = 1$.
+      \item $\PiG \cap D_{\univ{v}} = \Pi_{\univ{v}}$.
+    \end{itemize}
+    Moreover, we have an exact sequence
+    \[
+      1 \to \Pi_{\univ{v}} \to D_{\univ{v}} \to J \to 1,
+    \]
+    and the morphism $I_{\univ{v}} \to J$ induced by the inclusion $I_{\univ{v}} \subset D_{\univ{v}}$ is an isomorphism. Thus, $D_{\univ{v}}$ is naturally isomorphic to the product $\Pi_{\univ{v}} \times I_{\univ{v}}$, or $\Pi_{\univ{v}} \times J$.
+    \item Let $\univ{e} \in \Node{\univG}$, $\univ{v} \in \Vcal(\univ{e})$. Then the followings hold.
+    \begin{itemize}
+      \item $I_{\univ{v}} \subset I_{\univ{e}}$.
+      \item $\PiG \cap I_{\univ{e}} = \Pi_{\univ{e}}$.
+      \item $D_{\univ{e}} = I_{\univ{e}}$.
+    \end{itemize}
+    Moreover, we have an exact sequence
+    \[
+      1 \to \Pi_{\univ{e}} \to I_{\univ{e}} \to J \to 1,
+    \]  
+    and the morphism $I_{\univ{v}} \times \Pi_{\univ{e}} \to I_{\univ{e}}$ induced by the inclusions $I_{\univ{v}} \subset I_{\univ{e}}$ is an isomorphism.
+    \item Let $\univ{c} \in \Cusp{\univG}$, $\univ{v} \in \Vcal(\univ{c})$. Then the following equality holds.
+    \begin{itemize}
+      \item $\PiG \cap D_{\univ{c}} = \Pi_{\univ{c}}$.
+    \end{itemize}
+    Moreover, we have an exact sequence
+    \[
+      1 \to \Pi_{\univ{c}} \to D_{\univ{c}} \to J \to 1,
+    \]
+    and the morphism $I_{\univ{v}} \times \Pi_{\univ{c}} \to D_{\univ{c}}$ induced by the inclusions $I_{\univ{v}} \subset D_{\univ{c}}$ is an isomorphism.
+  \end{enumerate}
+\end{lem}
+\begin{proof}
+  The former portion of the assertion (i) follows immediately from the various definitions involved. To verify the latter portion of the assertion (i), it suffices to show that the morphism $I_{\univ{v}} \to J$ induced by the inclusion $I_{\univ{v}} \subset D_{\univ{v}}$ is an isomorphism. We note, by the equation $\PiG \cap I_{\univ{v}} = 1$, that the morphism $I_{\univ{v}} \to J$ is injective. Now, we take a morphism $s \colon J \to \mathrm{Aut}(\PiG)$ in a following manner: for $j \in J$, we define $s(j)$ for the unique lifting of $\phi(j)$ to an element of $\Aut(\PiG)$ which preserves $\Pi_{\univ{v}}$ and induces the identity on $\Pi_{\univ{v}}$. Then, by the definitions involved, the image of $s$ is contained in $I_{\univ{v}}$. Moreover, the composite morphism $J \xrightarrow{s} I_{\univ{v}} \to J$ is obviously the identity morphism. Thus, the morphism $I_{\univ{v}} \to J$ is an isomorphism, and the assertion (i) follows.
+  
+  
+\end{proof}
+
+\begin{lem}
+  Let $\univ{e} \in \Node{\univG}$. Let $\univ{v_1}, \univ{v_2} \in \Vcal(\univ{e})$ be the two vertices of $\univG$ adjacent to $\univ{e}$. Assume that the [outer] representation $\phi$ is non-degenerate at $\univ{e}$. Then the morphism $I_{\univ{v_1}} \times I_{\univ{v_2}} \to I_{\univ{e}}$ has open image.
+\end{lem}
 
 \begin{lem}
   center とかの群論の計算、inertia の話
