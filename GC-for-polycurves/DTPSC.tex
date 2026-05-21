@@ -60,7 +60,7 @@
   \end{enumerate}
 \end{defn}
 
-\begin{rem}
+\begin{rem}\label{RemarkUniqueGenerization}
   We note that every outer representation of DTPSC-type has an [unique] generization which is non-degenerate.
 \end{rem}
 
@@ -88,7 +88,7 @@
       D_c \coloneqq N_{\PiG^J}(\Pi_c) \subset \PiG^J \ \mathrm{(respectively, \ } I_c \coloneqq \Pi_c \subset \PiG^J \mathrm{)}
     \]
     and refer to $D_c$ (respectively, $I_c$) as a \emph{decomposition subgroup} (respectively, \emph{inertia subgroup}) of $\PiG^J$ associated to $c$, or, alternatively, the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to the cuspidal subgroup $\Pi_c \subset \PiG$. If, moreover, the cuspidal subgroup $\Pi_c$ is the cuspidal subgroup associated to an element $\univ{c} \in \Cusp{\Gcal}$, then we shall write $D_{\univ{c}} \coloneqq D_c$ (respectively, $I_{\univ{c}} \coloneqq I_c$) and refer to $D_{\univ{c}}$ (respectively, $I_{\univ{c}}$) as the decomposition subgroup (respectively, inertia subgroup) of $\PiG^J$ associated to $\univ{c}$.
-    \item Let $e \in \Node{\Gcal}$ be an node and let $\Pi_e \subset \PiG$ be an edge subgroup of $\PiG$ associated to $e$. Then we shall write
+    \item Let $e \in \Node{\Gcal}$ be an node and let $\Pi_e \subset \PiG$ be an nodal subgroup of $\PiG$ associated to $e$. Then we shall write
     \[
       D_e \coloneqq N_{\PiG^J}(\Pi_e) \subset \PiG^J \ \mathrm{(respectively, \ } I_e \coloneqq Z_{\PiG^J}(\Pi_e) \subset \PiG^J \mathrm{)}
     \]
@@ -126,6 +126,7 @@
     and the morphism $I_{\univ{v}} \times \Pi_{\univ{e}} \to I_{\univ{e}}$ induced by the inclusions $I_{\univ{v}} \subset I_{\univ{e}}$ is an isomorphism.
     \item Let $\univ{c} \in \Cusp{\univG}$, $\univ{v} \in \Vcal(\univ{c})$. Then the following equality holds.
     \begin{itemize}
+      \item $I_{\univ{v}} \subset D_{\univ{c}}$.
       \item $\PiG \cap D_{\univ{c}} = \Pi_{\univ{c}}$.
     \end{itemize}
     Moreover, we have an exact sequence
@@ -133,28 +134,69 @@
       1 \to \Pi_{\univ{c}} \to D_{\univ{c}} \to J \to 1,
     \]
     and the morphism $I_{\univ{v}} \times \Pi_{\univ{c}} \to D_{\univ{c}}$ induced by the inclusions $I_{\univ{v}} \subset D_{\univ{c}}$ is an isomorphism.
+    \item Let $\univ{e} \in \Node{\univG}$, $\univ{v} \in \Vcal(\univ{e})$. (respectively, $\univ{c} \in \Cusp{\univG}$, $\univ{v} \in \Vcal(\univ{c})$. Then the inequality $D_{\univ{e}} \subset D_{\univ{v}}$ (respectively, $D_{\univ{c}} \subset D_{\univ{v}}$) holds.
   \end{enumerate}
 \end{lem}
 \begin{proof}
-  The former portion of the assertion (i) follows immediately from the various definitions involved. To verify the latter portion of the assertion (i), it suffices to show that the morphism $I_{\univ{v}} \to J$ induced by the inclusion $I_{\univ{v}} \subset D_{\univ{v}}$ is an isomorphism. We note, by the equation $\PiG \cap I_{\univ{v}} = 1$, that the morphism $I_{\univ{v}} \to J$ is injective. Now, we take a morphism $s \colon J \to \mathrm{Aut}(\PiG)$ in a following manner: for $j \in J$, we define $s(j)$ for the unique lifting of $\phi(j)$ to an element of $\Aut(\PiG)$ which preserves $\Pi_{\univ{v}}$ and induces the identity on $\Pi_{\univ{v}}$. Then, by the definitions involved, the image of $s$ is contained in $I_{\univ{v}}$. Moreover, the composite morphism $J \xrightarrow{s} I_{\univ{v}} \to J$ is obviously the identity morphism. Thus, the morphism $I_{\univ{v}} \to J$ is an isomorphism, and the assertion (i) follows.
+  The former portion of the assertion (i) follows immediately from the commensurably terminality of $\Pi_{\univ{v}}$ in $\PiG$ and the various definitions involved. To verify the latter portion of the assertion (i), it suffices to show that the morphism $I_{\univ{v}} \to J$ induced by the inclusion $I_{\univ{v}} \subset D_{\univ{v}}$ is an isomorphism. We note, by the equation $\PiG \cap I_{\univ{v}} = 1$, that the morphism $I_{\univ{v}} \to J$ is injective. Now, we take a morphism $s \colon J \to \mathrm{Aut}(\PiG)$ in a following manner: for $j \in J$, we define $s(j)$ for the unique lifting of $\phi(j)$ to an element of $\Aut(\PiG)$ which preserves $\Pi_{\univ{v}}$ and induces the identity on $\Pi_{\univ{v}}$. Then, by the definitions involved, the image of $s$ is contained in $I_{\univ{v}}$. Moreover, the composite morphism $J \xrightarrow{s} I_{\univ{v}} \to J$ is obviously the identity morphism. Thus, the morphism $I_{\univ{v}} \to J$ is an isomorphism, and the assertion (i) follows.
   
-  
+  The first two formulas in the assertion (ii) follow immediately from the commensurably terminality of $\Pi_{\univ{e}}$ in $\PiG$ and the various definitions involved. The remaining portion of the assertion (ii) follows immediately from the former two formulas in the assertion (ii) and the various definitions involved.
+
+  The former portion of the assertion (iii) follows immediately from the commensurably terminality of $\Pi_{\univ{c}}$ in $\PiG$ and the various definitions involved. The remaining portion of the assertion (iii) follows immediately from the former portion of the assertion (iii) and the various definitions involved. The assertion (iv) follows immediately from the assertion (ii) and the assertion (iii).
 \end{proof}
 
 \begin{lem}
-  Let $\univ{e} \in \Node{\univG}$. Let $\univ{v_1}, \univ{v_2} \in \Vcal(\univ{e})$ be the two vertices of $\univG$ adjacent to $\univ{e}$. Assume that the [outer] representation $\phi$ is non-degenerate at $\univ{e}$. Then the morphism $I_{\univ{v_1}} \times I_{\univ{v_2}} \to I_{\univ{e}}$ has open image.
-\end{lem}
-
-\begin{lem}
-  center とかの群論の計算、inertia の話
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of DTPSC-type. Let $\univ{e} \in \Node{\univG}$. Let $\univ{v_1}, \univ{v_2} \in \Vcal(\univ{e})$ be the two vertices of $\univG$ adjacent to $\univ{e}$. Then the following hold.
+  \begin{enumerate}
+    \item In light of Lemma \ref{BasicPropertiesOfDecompositionAndInertiaSubgroups}, we have an isomorphism $I_{\univ{v_1}} \times \Pi_{\univ{e}} \to I_{\univ{v_2}} \times \Pi_{\univ{e}}$ induced by the inclusions $I_{\univ{v_1}} \subset I_{\univ{e}}$, $I_{\univ{v_2}} \subset I_{\univ{e}}$ and $\Pi_{\univ{e}} \subset I_{\univ{e}}$. Then the followings hold.
+    \begin{itemize}
+      \item The morphism $I_{\univ{v_1}} \to I_{\univ{v_2}}$ induced by the isomorphism $I_{\univ{v_1}} \times \Pi_{\univ{e}} \to I_{\univ{v_2}} \times \Pi_{\univ{e}}$ is an isomorphism, which is induced by the isomorphisms $I_{\univ{v_1}} \to J$ and $I_{\univ{v_2}} \to J$ given in Lemma \ref{BasicPropertiesOfDecompositionAndInertiaSubgroups}.
+      \item The morphism $I_{\univ{v_1}} \to \Pi_{\univ{e}}$ coincides with the composite morphism $I_{\univ{v_1}} \to J \xrightarrow{\phi} \Dehn{\Gcal} \xrightarrow{\Dpar{\univ{e}}} \sgnnodal{\univ{e}} \to \Pi_{\univ{e}}$, where the morphism $\sgnnodal{\univ{e}} \to \Pi_{\univ{e}}$ is the morphism given by $[x, \univ{v_1}] \mapsto x$ for $x \in \Pi_{\univ{e}}$.
+      \item The morphism $\Pi_{\univ{e}} \to I_{\univ{v_2}}$ induced by the isomorphism $I_{\univ{v_1}} \times \Pi_{\univ{e}} \to I_{\univ{v_2}} \times \Pi_{\univ{e}}$ is the zero morphism.
+      \item The morphism $\Pi_{\univ{e}} \to \Pi_{univ{e}}$ induced by the isomorphism $I_{\univ{v_1}} \times \Pi_{\univ{e}} \to I_{\univ{v_2}} \times \Pi_{\univ{e}}$ is the identity morphism.
+    \end{itemize}
+    \item Assume that the [outer] representation $\phi$ is non-degenerate at $\univ{e}$. Then the morphism $I_{\univ{v_1}} \times I_{\univ{v_2}} \to I_{\univ{e}}$ has open image.
+  \end{enumerate}
 \end{lem}
 \begin{proof}
-  NodNon など
+  The assertion (i) follows immediately from the proof of Lemma \ref{BasicPropertiesOfDecompositionAndInertiaSubgroups} and the various definitions involved. The assertion (ii) follows immediately from the assertion (i) and the various definitions involved.
+\end{proof}
+
+\begin{defn}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of DTPSC-type. Then we shall denote by \[\Gcalrep{J}\] the connected semi-graph of anabelioids defined as follows.
+  \begin{itemize}
+    \item The underlying semi-graph of $\Gcalrep{J}$ is the underlying semi-graph of $\Gcal$.
+    \item The anabelioid corresponding to a vertex $v \in \Vert{\Gcal}$ (respectively, a cusp $c \in \Cusp{\Gcal}$; a node $e \in \Node{\Gcal}$) is the connected anabelioid determined by the decomposition subgroup, regarded up to inner automorphism, $D_v \subset \PiG^J$ (respectively, $D_c \subset \PiG^J$; $D_e \subset \PiG^J$).
+    \item For $v \in \Vcal(e)$, the associated morphism of anabelioids is the morphism determined by the natural inclusion $D_e \subset D_v$.
+  \end{itemize}
+\end{defn}
+
+\begin{lem}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of DTPSC-type. Then, the natural outer isomorphism $\Pi_{\Gcalrep{J} \to \PiG^J}$, induced by the various inclusions $D_v \subset \PiG^J$ (respectively, $D_c \subset \PiG^J$; $D_e \subset \PiG^J$) for $v \in \Vert{\Gcal}$ (respectively, $c \in \Cusp{\Gcal}$; $e \in \Node{\Gcal}$), is an isomorphism.
+\end{lem}
+\begin{proof}
+  First, we observe that the decomposition subgroup $D_z$ --- where $z \in \VCN{\Gcal}$ --- is an extension of $J$ by $\Pi_z$. Now it is easily verified that the profinite Galois covering of $\Gcalrep{J}$ determined by the various quotients $D_z \to J$ is isomorphic to $\Gcal$ [as a pro-object of the category of semi-graphs of anabelioids]; thus, we obtain an exact sequence
+  \[
+    1 \to \PiG \to \Pi_{\Gcalrep{J}} \to J \to 1.
+  \]
+  On the other hand, it follows from the construction of this profinite covering $\Gcal \to \Gcalrep{J}$, together with the definition of the homomorphism $\Pi_{\Gcalrep{J}} \to \PiG^J$, that the composite $\PiG \to \Pi_{\Gcalrep{J}} \to \PiG^J$ coincides with the natural inclusion $\PiG \to \PiG^J$. Thus, the bijectivity of the homomorphism $\Pi_{\Gcalrep{J}} \to \PiG^J$ follows from the ``Five Lemma''. This completes the proof of the lemma.
+\end{proof}
+
+\begin{defn}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Let $r$ be an integer. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of DTPSC-type of rank $r$. Then we shall say that the representation $\phi$ is \emph{of multiple inertia pointed stable curves type} if the following conditions hold:
+  \begin{itemize}
+    \item there is a set of subgroups $\{J_i\}_{i \in \Lambda}$ such that, for each $i \in \Lambda$, the restriction of $\phi$ to the subgroup $J_i$ has a generization which is of IPSC-type (cf. \cite[Definition 2.4, (i)]{NodNon}, Remark \ref{RemarkUniqueGenerization}), and $J$ is generated by the subgroups $J_i$.
+  \end{itemize}
+  We abbreviate the term ``multiple inertia pointed stable curves type'' to ``\emph{MIPSC-type}''.
+\end{defn}
+
+\begin{lem}
+  Let $\Sigma$ be a nonempty set of prime numbers, and let $\Gcal$ be a semi-graph of anabelioids of pro-$\Sigma$ PSC-type. Let $J$ be a profinite group which acts continuously on $\Gcal$. Assume that the representation $\phi \colon J \to \Aut(\Gcal)$ is of MIPSC-type. Then the representation $\phi$ is of DTPSC-type.
+\end{lem}
+\begin{proof}
+  The assertion follows immediately from \cite[Remark 2.4.2]{NodNon} and the various definitions involved.
 \end{proof}
 
 
-inertia の線形代数は、かかないといけない
 
-あとは、strata に付随する外表現 (環論との対応)
 
-nondegenerate, とかいたが、実は SNN-type のこととあわせて修正する必要がある気がする。あと、IPSC-type にあわせたかたちのものについても、かく必要があるかもしれない - 真面目に環論をかんがえていないのでまだわからない。
